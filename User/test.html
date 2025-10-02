@@ -1,0 +1,57 @@
+        <button type="submit" class="btn btn-primary w-100 btn-pay">✅ Confirm & Pay</button>
+          <p class="secure text-center mt-2">🔒 Secure Payment Powered by SSL</p>
+        </form>
+      </div>
+    </div>
+
+    <!-- Right Column (Summary) -->
+    <div class="col-lg-4">
+      <div class="summary-card p-4">
+        <h5 class="mb-3">Flight Summary</h5>
+        <div class="d-flex align-items-center mb-3">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Qatar_Airways_Logo.svg" 
+               alt="Airline Logo" width="70" class="me-3">
+          <div>
+            <strong>Qatar Airways</strong><br>
+            <small>Abuja → London</small>
+          </div>
+        </div>
+        <ul class="list-unstyled">
+          <li><strong>Date:</strong> 25 Aug, 2025</li>
+          <li><strong>Time:</strong> 09:30 AM</li>
+          <li><strong>Duration:</strong> 6h 45m</li>
+        </ul>
+        <hr>
+        <div class="d-flex justify-content-between">
+          <span>Base Price:</span>
+          <span>$650</span>
+        </div>
+        <div class="d-flex justify-content-between">
+          <span>Taxes & Fees:</span>
+          <span>$50</span>
+        </div>
+        <div class="d-flex justify-content-between price mt-2">
+          <span>Total:</span>
+          <span>$700</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+<script>
+  if (window.feather) feather.replace();
+  // Cart icon click animation
+  const cartIconEl = document.querySelector('.cart-icon-container');
+  if (cartIconEl) {
+    cartIconEl.addEventListener('click', function() {
+      this.style.transform = 'scale(0.95)';
+      setTimeout(() => { this.style.transform = 'scale(1)'; }, 150);
+    });
+  }
+</script>
+</body>
+</html>
