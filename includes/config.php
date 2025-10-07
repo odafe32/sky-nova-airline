@@ -21,7 +21,7 @@ define('SITE_URL', 'http://localhost/airlines/');
 define('SITE_NAME', 'Speed of Light Airlines');
 
 // Security Configuration
-define('ENCRYPTION_KEY', 'SOLA_2025_SECURE_KEY_' . md5('airlines_system'));
+define('ENCRYPTION_KEY', 'SKYNOVA_2025_SECURE_KEY_' . md5('airlines_system'));
 
 // Session Configuration
 ini_set('session.cookie_httponly', 1);

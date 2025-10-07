@@ -229,8 +229,8 @@ try {
     
     <style>
         :root {
-            --brand: #00539C;
-            --brand-dark: #003366;
+            --brand: #38a169;
+            --brand-dark: #38a169;
             --bg: #f8fafc;
             --card-bg: rgba(255, 255, 255, 0.96);
             --muted: #64748b;
@@ -313,7 +313,7 @@ try {
             position: sticky;
             top: 0;
             z-index: 900;
-            background: linear-gradient(135deg, rgba(0, 83, 156, .9), rgba(0, 51, 102, .9));
+            background:#318a5d;
             color: #fff;
             padding: 12px 16px;
             margin-left: 260px;
@@ -351,7 +351,7 @@ try {
         .page-title h1 {
             font-weight: 800;
             letter-spacing: .5px;
-            background: linear-gradient(45deg, #00539C, #003366);
+            background: linear-gradient(45deg, #38a169, #38a169);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
@@ -378,7 +378,7 @@ try {
             left: 0;
             right: 0;
             height: 4px;
-            background: linear-gradient(90deg, #00539C, #003366);
+            background: linear-gradient(90deg, #38a169, #38a169);
         }
 
         /* Stats Grid */
@@ -409,7 +409,7 @@ try {
         }
 
         .stat-card.total::before {
-            background: linear-gradient(90deg, #00539C, #003366);
+            background: linear-gradient(90deg, #38a169, #38a169);
         }
 
         .stat-card.pending::before {
@@ -490,7 +490,7 @@ try {
         }
 
         .chip-blue {
-            background: linear-gradient(135deg, #00539C, #003366);
+            background: linear-gradient(135deg, #38a169, #38a169);
         }
 
         .chip-green {
@@ -639,7 +639,7 @@ try {
     <aside class="sidebar" id="sidebar">
         <div class="brand">
             <img src="../pexels-sevenstormphotography-728824 (1).jpg" alt="Logo">
-            <div class="brand-title">SOLA</div>
+            <div class="brand-title">SKYNOVA</div>
         </div>
         <nav>
             <a href="dashboard.php" class="nav-link"><i data-feather="home"></i> Dashboard</a>

@@ -64,7 +64,7 @@
         }
         
         .navbar {
-            background: #00539C;
+            background: #38a169;
             z-index: 1000;
             box-shadow: 0 2px 20px rgba(0, 83, 156, 0.15);
         }
@@ -173,7 +173,7 @@
         }
         
         .sidebar {
-            background: #003366;
+            background: #38a169;
             min-height: 100vh;
             padding-top: 30px;
             z-index: 100;
@@ -207,7 +207,7 @@
         }
         
         .sidebar .nav-link.active, .sidebar .nav-link:hover {
-            background: #00539C;
+            background: #38a169;
             color: #fff;
             transform: translateX(5px);
             box-shadow: 0 4px 15px rgba(0,0,0,0.2);
@@ -220,7 +220,7 @@
         }
         
         .payment-header {
-            color: #00539C;
+            color: #38a169;
             text-align: center;
             margin-bottom: 50px;
             animation: fadeInDown 1s ease-out;
@@ -240,7 +240,7 @@
             left: 0;
             right: 0;
             height: 4px;
-            background: linear-gradient(90deg, #00539C, #003366);
+            background: linear-gradient(90deg, #38a169, #38a169);
         }
         
         .payment-header h1 {
@@ -248,7 +248,7 @@
             font-weight: 700;
             letter-spacing: 2px;
             margin-bottom: 15px;
-            background: linear-gradient(45deg, #00539C, #003366);
+            background: linear-gradient(45deg, #38a169, #38a169);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -298,9 +298,9 @@
         }
         
         .step-circle.active {
-            background: linear-gradient(135deg, #00539C, #003366);
+            background: linear-gradient(135deg, #38a169, #38a169);
             color: #fff;
-            border-color: #00539C;
+            border-color: #38a169;
             box-shadow: 0 4px 15px rgba(0, 83, 156, 0.3);
             animation: pulse 2s infinite;
         }
@@ -313,7 +313,7 @@
         
         .step-label {
             font-weight: 600;
-            color: #00539C;
+            color: #38a169;
             font-size: 1.1rem;
         }
         
@@ -399,7 +399,7 @@
             left: 0;
             right: 0;
             height: 4px;
-            background: linear-gradient(90deg, #00539C, #003366);
+            background: linear-gradient(90deg, #38a169, #38a169);
             transform: scaleX(0);
             transition: transform 0.3s ease;
         }
@@ -417,7 +417,7 @@
         .section-title {
             font-size: 1.4rem;
             font-weight: 700;
-            color: #00539C;
+            color: #38a169;
             margin-bottom: 25px;
             position: relative;
             padding-left: 20px;
@@ -431,7 +431,7 @@
             transform: translateY(-50%);
             width: 4px;
             height: 20px;
-            background: linear-gradient(135deg, #00539C, #003366);
+            background: linear-gradient(135deg, #38a169, #38a169);
             border-radius: 2px;
         }
         
@@ -512,7 +512,7 @@
         
         .payment-method-title {
             font-weight: 700;
-            color: #00539C;
+            color: #38a169;
             font-size: 1.1rem;
             margin-bottom: 5px;
         }
@@ -533,7 +533,7 @@
         .summary-title {
             font-size: 1.3rem;
             font-weight: 700;
-            color: #00539C;
+            color: #38a169;
             margin-bottom: 20px;
             display: flex;
             align-items: center;
@@ -559,8 +559,8 @@
         .summary-total {
             font-size: 1.3rem;
             font-weight: 700;
-            color: #00539C;
-            border-bottom: 2px solid #00539C;
+            color: #38a169;
+            border-bottom: 2px solid #38a169;
             background: rgba(0, 83, 156, 0.05);
             border-radius: 12px;
             padding: 15px 12px;
@@ -584,7 +584,7 @@
             font-family: 'Courier New', monospace;
             font-size: 1.3rem;
             font-weight: 700;
-            color: #00539C;
+            color: #38a169;
             background: rgba(0, 83, 156, 0.1);
             padding: 10px 15px;
             border-radius: 8px;
@@ -691,7 +691,7 @@
         }
         
         .footer-links h6 {
-            color: #00539C;
+            color: #38a169;
             font-weight: 700;
             margin-bottom: 20px;
             font-size: 1.1rem;
@@ -705,7 +705,7 @@
         }
         
         .footer-links ul li:hover {
-            color: #00539C;
+            color: #38a169;
         }
         
         .app-badges img {
@@ -720,7 +720,7 @@
         }
         
         .footer {
-            background: #00539C;
+            background: #38a169;
             color: #fff;
             text-align: center;
             padding: 20px 0 12px 0;
@@ -830,7 +830,7 @@
         }
         
         ::-webkit-scrollbar-thumb:hover {
-            background: rgba(0, 83, 156, 0.5);
+            background: #38a169;
         }
     </style>
 </head>
@@ -851,7 +851,7 @@
         <div class="container-fluid">
             <a class="navbar-brand d-flex align-items-center" href="#">
                 <img src="../pexels-sevenstormphotography-728824 (1).jpg" alt="Logo" style="width:38px; margin-right:10px; border-radius: 50%; box-shadow: 0 2px 8px rgba(0,0,0,0.3);">
-                SOLA
+                SKYNOVA
             </a>
             
             <!-- Enhanced User Section with Cart Icon -->
@@ -1021,13 +1021,13 @@
                         
                         <div class="smart-card airpaz-code-section">
                             <div class="section-title">
-                                <i data-feather="hash"></i> SOLA Booking Code
+                                <i data-feather="hash"></i> SKYNOVA Booking Code
                             </div>
                             <div class="payment-code">1031989162</div>
                             <div class="payment-status">Payment Status: <span class="text-danger">Awaiting Payment</span></div>
                             <div class="mt-3" style="color: #666; font-size: 1.05rem;">
                                 <i data-feather="dollar-sign" style="width: 16px; height: 16px;"></i> 
-                                Payment Currency: <strong>US$(USD) - United States Dollar</strong>
+                                Payment Currency: <strong>US$(NGN) - United States Dollar</strong>
                             </div>
                         </div>
                         
@@ -1142,7 +1142,7 @@
                                 <li>About Us</li>
                                 <li>Flight Deals</li>
                                 <li>Promotions</li>
-                                <li>SOLA Blog</li>
+                                <li>SKYNOVA Blog</li>
                                 <li>Airline Information</li>
                                 <li>Airport Information</li>
                                 <li>All Destinations</li>
@@ -1163,7 +1163,7 @@
                         <div class="col-md-3 mb-4">
                             <h6><i data-feather="help-circle"></i> Support</h6>
                             <ul class="list-unstyled">
-                                <li>SOLA Guide</li>
+                                <li>SKYNOVA Guide</li>
                                 <li>How to Book</li>
                                 <li>Help Center</li>
                                 <li>Terms Of Use</li>
@@ -1185,7 +1185,7 @@
                     </div>
                     <div class="text-center mt-4 pt-4 border-top">
                         <div class="text-muted small">
-                            Copyright © <span id="copyright-year"></span> Speed of Light Airlines. All rights reserved.
+                            Copyright © <span id="copyright-year"></span> SKYNOVA Airlines. All Rights Reserved.  
                         </div>
                     </div>
                 </div>
@@ -1194,7 +1194,7 @@
     </div>
 
     <footer class="footer">
-        &copy; <span id="year"></span> Speed of Light Airlines. All rights reserved.
+        &copy; <span id="year"></span> SKYNOVA Airlines. All Rights Reserved.  
     </footer>
     
     <!-- JS -->
@@ -1290,7 +1290,7 @@
                 
                 setTimeout(() => {
                     // Simulate promo code validation
-                    if (promoCode.toLowerCase() === 'sola2025' || promoCode.toLowerCase() === 'welcome10') {
+                    if (promoCode.toLowerCase() === 'SKYNOVA2025' || promoCode.toLowerCase() === 'welcome10') {
                         // Success
                         this.innerHTML = '<i data-feather="check"></i> Applied!';
                         this.classList.remove('btn-success');
@@ -1436,7 +1436,7 @@ Perfect! I've completely transformed your payment.php page with stunning modern 
 - **Enhanced security badges** with rotation animations
 
 ### 🚀 **Smart Interactions:**
-- **Working promo codes** ("SOLA2025" or "WELCOME10" for $50 off)
+- **Working promo codes** ("SKYNOVA2025" or "WELCOME10" for $50 off)
 - **Dynamic price updates** when promo is applied
 - **Loading states** for all interactions
 - **Click animations** throughout

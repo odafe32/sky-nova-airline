@@ -77,10 +77,10 @@ $(document).ready(function() {
             },
             colors: ['#00bcd4', '#4680ff', '#536dfe'],
             title: {
-                text: 'Solar Employment Growth by Sector, 2010-2017'
+                text: 'SKYNOVAr Employment Growth by Sector, 2010-2017'
             },
             subtitle: {
-                text: 'Source: thesolarfoundation.com'
+                text: 'Source: theSKYNOVArfoundation.com'
             },
             yAxis: {
                 title: {
@@ -124,14 +124,14 @@ $(document).ready(function() {
 
         // [ area-zoom-chart ] Start
         $.getJSON(
-            'https://cdn.rawgit.com/highcharts/highcharts/057b672172ccc6c08fe7dbb27fc17ebca3f5b770/samples/data/usdeur.json',
+            'https://cdn.rawgit.com/highcharts/highcharts/057b672172ccc6c08fe7dbb27fc17ebca3f5b770/samples/data/NGNeur.json',
             function(data) {
                 Highcharts.chart('chart-highchart-area2', {
                     chart: {
                         zoomType: 'x',
                     },
                     title: {
-                        text: 'USD to EUR exchange rate over time'
+                        text: 'NGN to EUR exchange rate over time'
                     },
                     subtitle: {
                         text: document.ontouchstart === undefined ?
@@ -177,7 +177,7 @@ $(document).ready(function() {
                     },
                     series: [{
                         type: 'area',
-                        name: 'USD to EUR',
+                        name: 'NGN to EUR',
                         data: data
                     }]
                 });

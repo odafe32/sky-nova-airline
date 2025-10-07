@@ -82,23 +82,17 @@ try {
     }
 
     // Update booking status to Confirmed
-    // Update booking status to Confirmed - UPDATED FOR YOUR TABLE STRUCTURE
-$stmt = $pdo->prepare("
-    UPDATE bookings SET 
-        status = 'Confirmed',
-        payment_status = 'Paid',
-        paystack_reference = ?,
-        payment_method = 'Paystack',
-        paid_amount = ?,
-        payment_date = NOW(),
-        updated_at = NOW()
-    WHERE booking_id = ?
-");
-$stmt->execute([
-    $payment_data['reference'],
-    $paid_amount,
-    $booking['booking_id']
-]);
+    $stmt = $pdo->prepare("
+        UPDATE bookings SET
+            status = 'Confirmed',
+            payment_status = 'Paid',
+            paystack_reference = ?,
+            payment_method = 'Paystack',
+            paid_amount = ?,
+            payment_date = NOW(),
+            updated_at = NOW()
+        WHERE booking_id = ?
+    ");
     $stmt->execute([
         $payment_data['reference'],
         $paid_amount,
@@ -107,7 +101,7 @@ $stmt->execute([
 
     // Update seat availability
     $stmt = $pdo->prepare("
-        SELECT economy_seats, business_seats, first_class_seats 
+        SELECT economy_seats, business_seats, first_class_seats
         FROM flights WHERE flight_id = ?
     ");
     $stmt->execute([$booking['flight_id']]);
@@ -128,8 +122,8 @@ $stmt->execute([
 
     // Insert payment record
     $stmt = $pdo->prepare("
-        INSERT INTO payments (booking_id, user_id, amount, payment_method, payment_reference, 
-                            payment_status, transaction_id, created_at) 
+        INSERT INTO payments (booking_id, user_id, amount, payment_method, payment_reference,
+                            payment_status, transaction_id, created_at)
         VALUES (?, ?, ?, 'Paystack', ?, 'Completed', ?, NOW())
     ");
     $stmt->execute([

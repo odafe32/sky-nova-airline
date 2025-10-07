@@ -86,7 +86,7 @@ function initializePaystackPayment($email, $amount, $reference, $callback_url, $
 }
 
 // Initialize payment with Paystack
-$callback_url = "http://localhost/airlines/User/payment-callback.php"; // Update with your domain
+$callback_url = "http://localhost/airlines/User/payment-callback.php?reference=" . urlencode($pending_booking['booking_ref']);
 $paystack_response = initializePaystackPayment(
     $pending_booking['email'],
     $pending_booking['amount'],
@@ -97,7 +97,6 @@ $paystack_response = initializePaystackPayment(
 
 $error_message = '';
 $payment_url = '';
-
 if ($paystack_response && $paystack_response['status'] === true) {
     $payment_url = $paystack_response['data']['authorization_url'];
 
@@ -130,7 +129,7 @@ if ($paystack_response && $paystack_response['status'] === true) {
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         body {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #38a169 0%, #38a169 100%);
             min-height: 100vh;
             font-family: 'Inter', sans-serif;
             display: flex;
@@ -167,7 +166,7 @@ if ($paystack_response && $paystack_response['status'] === true) {
         }
 
         .payment-header h1 {
-            color: #00539C;
+            color: #38a169;
             font-size: 2.5rem;
             font-weight: 700;
             margin-bottom: 10px;
@@ -187,7 +186,7 @@ if ($paystack_response && $paystack_response['status'] === true) {
         }
 
         .booking-summary h5 {
-            color: #00539C;
+            color: #38a169;
             margin-bottom: 20px;
             font-weight: 600;
         }
@@ -204,11 +203,11 @@ if ($paystack_response && $paystack_response['status'] === true) {
             border-bottom: none;
             font-weight: 600;
             font-size: 1.1rem;
-            color: #00539C;
+            color: #38a169;
         }
 
         .payment-btn {
-            background: linear-gradient(135deg, #00539C 0%, #003366 100%);
+            background: linear-gradient(135deg, #38a169 0%, #38a169 100%);
             color: #fff;
             border: none;
             border-radius: 12px;
@@ -226,7 +225,7 @@ if ($paystack_response && $paystack_response['status'] === true) {
 
         .payment-btn:hover {
             transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(0, 83, 156, 0.4);
+            box-shadow: 0 8px 25px rgba(0, 156, 104, 0.4);
             color: #fff;
         }
 

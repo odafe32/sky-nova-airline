@@ -329,7 +329,7 @@ try {
         $notifications[] = [
             'icon' => $icon,
             'title' => $booking['status'] === 'confirmed' ? 'Payment confirmed' : 'New booking',
-            'meta' => "{$booking['flight_no']} · US$ " . number_format($booking['total_amount'], 2) . " · {$timeAgo}",
+            'meta' => "{$booking['flight_no']} · ₦" . number_format($booking['total_amount'], 2) . " · {$timeAgo}",
             'time' => $booking['created_at']
         ];
     }
@@ -393,8 +393,8 @@ function time_elapsed_string($datetime, $full = false)
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --brand: #00539C;
-            --brand-dark: #003366;
+            --brand: #38a169;
+            --brand-dark: #38a169;
             --bg: #f8fafc;
             --card-bg: rgba(255, 255, 255, 0.96);
             --muted: #64748b;
@@ -483,12 +483,12 @@ function time_elapsed_string($datetime, $full = false)
             position: sticky;
             top: 0;
             z-index: 900;
-            background: linear-gradient(135deg, rgba(0, 83, 156, .9), rgba(0, 51, 102, .9));
+            background:#318a5d;
             color: #fff;
             padding: 12px 16px;
             margin-left: 260px;
             backdrop-filter: blur(10px);
-            box-shadow: 0 2px 20px rgba(0, 0, 0, .1)
+            box-shadow: 0 2px 20px rgba(0, 0, 0, .1);
         }
 
         .topbar .right {
@@ -649,7 +649,7 @@ function time_elapsed_string($datetime, $full = false)
         .page-title h1 {
             font-weight: 800;
             letter-spacing: .5px;
-            background: linear-gradient(45deg, #00539C, #003366);
+            background: linear-gradient(45deg, #38a169, #38a169);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent
         }
@@ -720,7 +720,7 @@ function time_elapsed_string($datetime, $full = false)
             left: 0;
             right: 0;
             height: 4px;
-            background: linear-gradient(90deg, #00539C, #003366)
+            background: linear-gradient(90deg, #38a169, #38a169)
         }
 
         .reveal {
@@ -783,7 +783,7 @@ function time_elapsed_string($datetime, $full = false)
     <aside class="sidebar" id="sidebar">
         <div class="brand">
             <img src="../pexels-sevenstormphotography-728824 (1).jpg" alt="Logo">
-            <div class="brand-title">SOLA</div>
+            <div class="brand-title">SKYNOVA</div>
         </div>
         <nav class="nav-section">
             <a href="dashboard.php" class="nav-link"><i data-feather="home"></i> Dashboard</a>
@@ -859,7 +859,7 @@ function time_elapsed_string($datetime, $full = false)
             <div class="col-12 col-md-4 reveal">
                 <div class="kpi-card h-100">
                     <div class="kpi-title">Total Revenue</div>
-                    <div class="kpi-value" id="kpiRevenue">US$ <?php echo number_format($payment_stats['total_revenue'], 2); ?></div>
+                    <div class="kpi-value" id="kpiRevenue">₦<?php echo number_format($payment_stats['total_revenue'], 2); ?></div>
                     <div class="text-success fw-semibold"><i data-feather="trending-up" style="width:16px;height:16px"></i> Live</div>
                 </div>
             </div>
@@ -1046,7 +1046,7 @@ function time_elapsed_string($datetime, $full = false)
                     <td>${tx.flight_no} <small class="text-muted">(${tx.origin} → ${tx.destination})</small></td>
                     <td>${formatDate(tx.created_at)}</td>
                     <td>${statusBadge(tx.status)}</td>
-                    <td class="text-end"><strong>US$ ${Number(tx.total_amount).toFixed(2)}</strong></td>
+                    <td class="text-end"><strong>NGN ${Number(tx.total_amount).toFixed(2)}</strong></td>
                 `;
                 txBody.appendChild(tr);
             });
@@ -1060,7 +1060,7 @@ function time_elapsed_string($datetime, $full = false)
             const pending = data.filter(x => x.status === 'pending');
             const revenue = completed.reduce((sum, x) => sum + Number(x.total_amount), 0);
 
-            document.getElementById('kpiRevenue').textContent = `US$ ${revenue.toFixed(2)}`;
+            document.getElementById('kpiRevenue').textContent = `NGN ${revenue.toFixed(2)}`;
             document.getElementById('kpiCompleted').textContent = completed.length;
             document.getElementById('kpiPending').textContent = pending.length;
         }
@@ -1109,7 +1109,7 @@ function time_elapsed_string($datetime, $full = false)
                         style: {
                             colors: '#64748b'
                         },
-                        formatter: (val) => `US$ ${val.toFixed(0)}`
+                        formatter: (val) => `NGN ${val.toFixed(0)}`
                     }
                 },
                 grid: {
@@ -1117,7 +1117,7 @@ function time_elapsed_string($datetime, $full = false)
                 },
                 tooltip: {
                     y: {
-                        formatter: (val) => `US$ ${val.toFixed(2)}`
+                        formatter: (val) => `NGN ${val.toFixed(2)}`
                     }
                 }
             };
@@ -1170,7 +1170,7 @@ function time_elapsed_string($datetime, $full = false)
                     `${tx.flight_no} (${tx.origin} → ${tx.destination})`,
                     formatDate(tx.created_at),
                     tx.status,
-                    `US$ ${Number(tx.total_amount).toFixed(2)}`
+                    `NGN ${Number(tx.total_amount).toFixed(2)}`
                 ]);
             });
 

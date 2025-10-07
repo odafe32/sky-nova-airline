@@ -501,7 +501,7 @@ $prefill_phone = $user['phone'];
         }
 
         .navbar {
-            background: #00539C;
+            background: #38a169;
             z-index: 1000;
             box-shadow: 0 2px 20px rgba(0, 83, 156, 0.15);
         }
@@ -617,7 +617,7 @@ $prefill_phone = $user['phone'];
         }
 
         .sidebar {
-            background: #003366;
+            background: #38a169;
             min-height: 100vh;
             padding-top: 30px;
             z-index: 100;
@@ -652,7 +652,7 @@ $prefill_phone = $user['phone'];
 
         .sidebar .nav-link.active,
         .sidebar .nav-link:hover {
-            background: #00539C;
+            background: #38a169;
             color: #fff;
             transform: translateX(5px);
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
@@ -665,7 +665,7 @@ $prefill_phone = $user['phone'];
         }
 
         .checkout-header {
-            color: #00539C;
+            color: #38a169;
             text-align: center;
             margin-bottom: 50px;
             animation: fadeInDown 1s ease-out;
@@ -681,7 +681,7 @@ $prefill_phone = $user['phone'];
             font-weight: 700;
             letter-spacing: 2px;
             margin-bottom: 15px;
-            background: linear-gradient(45deg, #00539C, #003366);
+            background: linear-gradient(45deg, #38a169, #38a169);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -697,7 +697,7 @@ $prefill_phone = $user['phone'];
         .section-title {
             font-size: 1.4rem;
             font-weight: 700;
-            color: #00539C;
+            color: #38a169;
             margin-bottom: 25px;
             position: relative;
             padding-left: 20px;
@@ -712,7 +712,7 @@ $prefill_phone = $user['phone'];
             transform: translateY(-50%);
             width: 4px;
             height: 20px;
-            background: linear-gradient(135deg, #00539C, #003366);
+            background: linear-gradient(135deg, #38a169, #38a169);
             border-radius: 2px;
         }
 
@@ -737,7 +737,7 @@ $prefill_phone = $user['phone'];
             left: 0;
             right: 0;
             height: 4px;
-            background: linear-gradient(90deg, #00539C, #003366);
+            background: linear-gradient(90deg, #38a169, #38a169);
             transform: scaleX(0);
             transition: transform 0.3s ease;
         }
@@ -759,7 +759,7 @@ $prefill_phone = $user['phone'];
         .flight-summary-title {
             font-size: 1.2rem;
             font-weight: 600;
-            color: #00539C;
+            color: #38a169;
             margin-bottom: 15px;
             display: flex;
             align-items: center;
@@ -788,7 +788,7 @@ $prefill_phone = $user['phone'];
         .flight-summary-airline {
             font-weight: 600;
             font-size: 1.1rem;
-            color: #00539C;
+            color: #38a169;
         }
 
         .flight-summary-badge {
@@ -819,7 +819,7 @@ $prefill_phone = $user['phone'];
         .route-code {
             font-size: 1.5rem;
             font-weight: 700;
-            color: #00539C;
+            color: #38a169;
             margin-bottom: 5px;
         }
 
@@ -830,7 +830,7 @@ $prefill_phone = $user['phone'];
 
         .route-arrow {
             margin: 0 20px;
-            color: #00539C;
+            color: #38a169;
             font-size: 1.5rem;
             position: relative;
         }
@@ -906,7 +906,7 @@ $prefill_phone = $user['phone'];
 
         .form-control:focus,
         .form-select:focus {
-            border-color: #00539C;
+            border-color: #38a169;
             box-shadow: 0 0 0 0.2rem rgba(0, 83, 156, 0.15);
             background: #fff;
             transform: translateY(-2px);
@@ -940,7 +940,7 @@ $prefill_phone = $user['phone'];
         }
 
         .checkout-btn {
-            background: linear-gradient(135deg, #00539C 0%, #003366 100%);
+            background: linear-gradient(135deg, #38a169 0%, #38a169 100%);
             color: #fff;
             box-shadow: 0 4px 15px rgba(0, 83, 156, 0.3);
         }
@@ -1036,12 +1036,12 @@ $prefill_phone = $user['phone'];
         }
 
         .newsletter-check .form-check-input:checked {
-            background-color: #00539C;
-            border-color: #00539C;
+            background-color: #38a169;
+            border-color: #38a169;
         }
 
         .footer {
-            background: #00539C;
+            background: #38a169;
             color: #fff;
             text-align: center;
             padding: 18px 0 10px 0;
@@ -1069,7 +1069,7 @@ $prefill_phone = $user['phone'];
         /* Payment Processing Styles */
         .payment-info {
             background: linear-gradient(135deg, #e3f2fd, #bbdefb);
-            border: 2px solid rgba(33, 150, 243, 0.3);
+            border: 2px solid rgba(0, 132, 7, 0.3);
             border-radius: 20px;
             padding: 25px 20px;
             margin-bottom: 25px;
@@ -1088,7 +1088,7 @@ $prefill_phone = $user['phone'];
             left: 0;
             right: 0;
             height: 4px;
-            background: linear-gradient(90deg, #2196f3, #1976d2);
+            background: linear-gradient(90deg, #38a169, #38a169);
         }
 
         .payment-info img {
@@ -1249,7 +1249,7 @@ $prefill_phone = $user['phone'];
         <div class="container-fluid">
             <a class="navbar-brand d-flex align-items-center" href="dashboard.php">
                 <img src="../pexels-sevenstormphotography-728824 (1).jpg" alt="Logo" style="width:38px; margin-right:10px; border-radius: 50%; box-shadow: 0 2px 8px rgba(0,0,0,0.3);">
-                SOLA
+                SKYNOVA
             </a>
 
             <!-- Enhanced User Section with Cart Icon -->
@@ -1374,7 +1374,7 @@ $prefill_phone = $user['phone'];
                     <img src="https://cdn.airpaz.com/cdn-cgi/image/w=120,h=120,f=webp/forerunner-next/img/illustration/v2/spot/warning.png" alt="Warning">
                     <div>
                         <strong>Important:</strong> Enter the passenger's name as written on the passport/ID Card. Spelling or punctuation errors may cause rejection of boarding or change fees.
-                        <a href="#" style="color:#00539C;font-weight:600;"> Check Name Guidelines</a>
+                        <a href="#" style="color:#38a169;font-weight:600;"> Check Name Guidelines</a>
                     </div>
                 </div>
 
@@ -1454,7 +1454,7 @@ $prefill_phone = $user['phone'];
                                         <?php echo date('H:i', strtotime($flight['arrival_time'])); ?>
                                     </div>
                                     <div class="d-flex align-items-center mt-2">
-                                        <div class="flight-summary-airline-logo" style="width:40px;height:40px;background:linear-gradient(135deg,#00539C,#003366);border-radius:8px;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:0.8rem;margin-right:10px;">
+                                        <div class="flight-summary-airline-logo" style="width:40px;height:40px;background:linear-gradient(135deg,#38a169,#38a169);border-radius:8px;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:0.8rem;margin-right:10px;">
                                             <?php echo strtoupper(substr($flight['airline'], 0, 2)); ?>
                                         </div>
                                         <small class="text-muted">
@@ -1510,7 +1510,7 @@ $prefill_phone = $user['phone'];
     </div>
 
     <footer class="footer">
-        &copy; <span id="year"></span> Speed of Light Airlines. All rights reserved.
+        &copy; <span id="year"></span> SKYNOVA Airlines. All Rights Reserved.  
     </footer>
 
     <!-- JS -->

@@ -292,7 +292,7 @@ $user_avatar = $user['avatar'] ? $user['avatar'] : null;
         }
 
         .navbar {
-            background: #00539C;
+            background: #38a169;
             z-index: 1000;
             box-shadow: 0 2px 20px rgba(0, 83, 156, 0.15);
         }
@@ -401,7 +401,7 @@ $user_avatar = $user['avatar'] ? $user['avatar'] : null;
         }
 
         .sidebar {
-            background: #003366;
+            background: #38a169;
             min-height: 100vh;
             padding-top: 30px;
             z-index: 100;
@@ -436,7 +436,7 @@ $user_avatar = $user['avatar'] ? $user['avatar'] : null;
 
         .sidebar .nav-link.active,
         .sidebar .nav-link:hover {
-            background: #00539C;
+            background: #38a169;
             color: #fff;
             transform: translateX(5px);
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
@@ -449,7 +449,7 @@ $user_avatar = $user['avatar'] ? $user['avatar'] : null;
         }
 
         .cart-header {
-            color: #00539C;
+            color: #38a169;
             text-align: center;
             margin-bottom: 50px;
             animation: fadeInDown 1s ease-out;
@@ -469,7 +469,7 @@ $user_avatar = $user['avatar'] ? $user['avatar'] : null;
             left: 0;
             right: 0;
             height: 4px;
-            background: linear-gradient(90deg, #00539C, #003366);
+            background: linear-gradient(90deg, #38a169, #38a169);
         }
 
         .cart-header h1 {
@@ -477,7 +477,7 @@ $user_avatar = $user['avatar'] ? $user['avatar'] : null;
             font-weight: 700;
             letter-spacing: 2px;
             margin-bottom: 15px;
-            background: linear-gradient(45deg, #00539C, #003366);
+            background: linear-gradient(45deg, #38a169, #38a169);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -588,7 +588,7 @@ $user_avatar = $user['avatar'] ? $user['avatar'] : null;
             left: 0;
             right: 0;
             height: 6px;
-            background: linear-gradient(90deg, #00539C, #003366, #48bb78);
+            background: linear-gradient(90deg, #38a169, #38a169, #48bb78);
             transform: scaleX(0);
             transition: transform 0.4s ease;
         }
@@ -614,7 +614,7 @@ $user_avatar = $user['avatar'] ? $user['avatar'] : null;
             position: absolute;
             top: 30px;
             right: 30px;
-            background: linear-gradient(135deg, #00539C, #003366);
+            background: linear-gradient(135deg, #38a169, #38a169);
             color: #fff;
             padding: 10px 20px;
             border-radius: 25px;
@@ -660,7 +660,7 @@ $user_avatar = $user['avatar'] ? $user['avatar'] : null;
         .airline-details h4 {
             font-size: 1.5rem;
             font-weight: 700;
-            color: #00539C;
+            color: #38a169;
             margin-bottom: 8px;
             text-shadow: 0 2px 4px rgba(0, 83, 156, 0.1);
         }
@@ -690,7 +690,7 @@ $user_avatar = $user['avatar'] ? $user['avatar'] : null;
         .route-code {
             font-size: 2rem;
             font-weight: 700;
-            color: #00539C;
+            color: #38a169;
             margin-bottom: 8px;
             text-shadow: 0 2px 4px rgba(0, 83, 156, 0.1);
         }
@@ -702,7 +702,7 @@ $user_avatar = $user['avatar'] ? $user['avatar'] : null;
         }
 
         .route-time {
-            color: #00539C;
+            color: #38a169;
             font-weight: 700;
             font-size: 1.2rem;
             margin-top: 8px;
@@ -710,7 +710,7 @@ $user_avatar = $user['avatar'] ? $user['avatar'] : null;
 
         .route-arrow {
             margin: 0 25px;
-            color: #00539C;
+            color: #38a169;
             font-size: 1.8rem;
             position: relative;
         }
@@ -748,7 +748,7 @@ $user_avatar = $user['avatar'] ? $user['avatar'] : null;
         .passenger-title {
             font-size: 1.3rem;
             font-weight: 700;
-            color: #00539C;
+            color: #38a169;
             margin-bottom: 25px;
             display: flex;
             align-items: center;
@@ -787,7 +787,7 @@ $user_avatar = $user['avatar'] ? $user['avatar'] : null;
 
         .passenger-value {
             font-weight: 700;
-            color: #00539C;
+            color: #38a169;
             font-size: 1.1rem;
         }
 
@@ -802,7 +802,7 @@ $user_avatar = $user['avatar'] ? $user['avatar'] : null;
         .price-title {
             font-size: 1.3rem;
             font-weight: 700;
-            color: #00539C;
+            color: #38a169;
             margin-bottom: 25px;
             display: flex;
             align-items: center;
@@ -828,8 +828,8 @@ $user_avatar = $user['avatar'] ? $user['avatar'] : null;
         .price-total {
             font-size: 1.4rem;
             font-weight: 700;
-            color: #00539C;
-            border-bottom: 3px solid #00539C;
+            color: #38a169;
+            border-bottom: 3px solid #38a169;
             background: rgba(0, 83, 156, 0.08);
             border-radius: 16px;
             padding: 20px 16px;
@@ -908,7 +908,7 @@ $user_avatar = $user['avatar'] ? $user['avatar'] : null;
         }
 
         .btn-checkout {
-            background: linear-gradient(135deg, #00539C 0%, #003366 100%);
+            background: linear-gradient(135deg, #38a169 0%, #38a169 100%);
             color: #fff;
             box-shadow: 0 6px 20px rgba(0, 83, 156, 0.3);
             animation: pulse-glow 2s ease-in-out infinite alternate;
@@ -917,7 +917,7 @@ $user_avatar = $user['avatar'] ? $user['avatar'] : null;
         }
 
         .btn-checkout:hover {
-            box-shadow: 0 10px 30px rgba(0, 83, 156, 0.5);
+            box-shadow: 0 10px 30px #38a169;
             color: #fff;
         }
 
@@ -941,7 +941,7 @@ $user_avatar = $user['avatar'] ? $user['avatar'] : null;
             left: 0;
             right: 0;
             height: 6px;
-            background: linear-gradient(90deg, #00539C, #003366, #48bb78);
+            background: linear-gradient(90deg, #38a169, #38a169, #48bb78);
         }
 
         .cart-footer-content {
@@ -953,7 +953,7 @@ $user_avatar = $user['avatar'] ? $user['avatar'] : null;
         }
 
         .total-summary h3 {
-            color: #00539C;
+            color: #38a169;
             font-size: 1.8rem;
             font-weight: 700;
             margin-bottom: 8px;
@@ -992,7 +992,7 @@ $user_avatar = $user['avatar'] ? $user['avatar'] : null;
         }
 
         .continue-btn {
-            background: linear-gradient(135deg, #00539C 0%, #003366 100%);
+            background: linear-gradient(135deg, #38a169 0%, #38a169 100%);
             color: #fff;
             box-shadow: 0 6px 20px rgba(0, 83, 156, 0.3);
             animation: pulse-glow 2s ease-in-out infinite alternate;
@@ -1041,7 +1041,7 @@ $user_avatar = $user['avatar'] ? $user['avatar'] : null;
         }
 
         .continue-btn:hover {
-            box-shadow: 0 10px 30px rgba(0, 83, 156, 0.5);
+            box-shadow: 0 10px 30px #38a169;
         }
 
         .clear-cart-btn:hover {
@@ -1061,7 +1061,7 @@ $user_avatar = $user['avatar'] ? $user['avatar'] : null;
         }
 
         .empty-cart h3 {
-            color: #00539C;
+            color: #38a169;
             font-size: 2rem;
             margin-bottom: 20px;
             font-weight: 700;
@@ -1073,7 +1073,7 @@ $user_avatar = $user['avatar'] ? $user['avatar'] : null;
         }
 
         .shop-now-btn {
-            background: linear-gradient(135deg, #00539C 0%, #003366 100%);
+            background: linear-gradient(135deg, #38a169 0%, #38a169 100%);
             color: #fff;
             border: none;
             border-radius: 16px;
@@ -1094,7 +1094,7 @@ $user_avatar = $user['avatar'] ? $user['avatar'] : null;
         }
 
         .footer {
-            background: #00539C;
+            background: #38a169;
             color: #fff;
             text-align: center;
             padding: 20px 0 12px 0;
@@ -1256,7 +1256,7 @@ $user_avatar = $user['avatar'] ? $user['avatar'] : null;
         }
 
         ::-webkit-scrollbar-thumb:hover {
-            background: rgba(0, 83, 156, 0.5);
+            background: #38a169;
         }
     </style>
 </head>
@@ -1278,7 +1278,7 @@ $user_avatar = $user['avatar'] ? $user['avatar'] : null;
         <div class="container-fluid">
             <a class="navbar-brand d-flex align-items-center" href="#">
                 <img src="../pexels-sevenstormphotography-728824 (1).jpg" alt="Logo" style="width:38px; margin-right:10px; border-radius: 50%; box-shadow: 0 2px 8px rgba(0,0,0,0.3);">
-                SOLA
+                SKYNOVA
             </a>
 
             <!-- Enhanced User Section with Cart Icon -->
@@ -1358,7 +1358,7 @@ $user_avatar = $user['avatar'] ? $user['avatar'] : null;
                 <?php if (empty($cart_items)): ?>
                     <!-- Empty Cart State -->
                     <div class="empty-cart">
-                        <i data-feather="shopping-cart" style="width:120px;height:120px;color:#00539C;opacity:0.3;"></i>
+                        <i data-feather="shopping-cart" style="width:120px;height:120px;color:#38a169;opacity:0.3;"></i>
                         <h3>Your cart is empty</h3>
                         <p>Start by searching and adding flights to your cart.</p>
                         <a href="book-flight.php" class="shop-now-btn">
@@ -1583,7 +1583,7 @@ $user_avatar = $user['avatar'] ? $user['avatar'] : null;
     </div>
 
     <footer class="footer">
-        &copy; <span id="year"></span> Speed of Light Airlines. All rights reserved.
+        &copy; <span id="year"></span> SKYNOVA Airlines. All Rights Reserved.  
     </footer>
 
     <!-- JS -->

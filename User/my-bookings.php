@@ -294,7 +294,7 @@ $user_avatar = $user['avatar'] ? $user['avatar'] : null;
         }
 
         .navbar {
-            background: #00539C;
+            background: #38a169;
             z-index: 1000;
             box-shadow: 0 2px 20px rgba(0, 83, 156, 0.15);
         }
@@ -411,7 +411,7 @@ $user_avatar = $user['avatar'] ? $user['avatar'] : null;
         }
 
         .sidebar {
-            background: #003366;
+            background: #38a169;
             min-height: 100vh;
             padding-top: 30px;
             z-index: 100;
@@ -446,7 +446,7 @@ $user_avatar = $user['avatar'] ? $user['avatar'] : null;
 
         .sidebar .nav-link.active,
         .sidebar .nav-link:hover {
-            background: #00539C;
+            background: #38a169;
             color: #fff;
             transform: translateX(5px);
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
@@ -459,7 +459,7 @@ $user_avatar = $user['avatar'] ? $user['avatar'] : null;
         }
 
         .bookings-header {
-            color: #00539C;
+            color: #38a169;
             text-align: center;
             margin-bottom: 50px;
             animation: fadeInDown 1s ease-out;
@@ -475,7 +475,7 @@ $user_avatar = $user['avatar'] ? $user['avatar'] : null;
             font-weight: 700;
             letter-spacing: 2px;
             margin-bottom: 15px;
-            background: linear-gradient(45deg, #00539C, #003366);
+            background: linear-gradient(45deg, #38a169, #38a169);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -548,7 +548,7 @@ $user_avatar = $user['avatar'] ? $user['avatar'] : null;
         .stat-number {
             font-size: 2rem;
             font-weight: 700;
-            color: #00539C;
+            color: #38a169;
             margin-bottom: 5px;
         }
 
@@ -572,7 +572,7 @@ $user_avatar = $user['avatar'] ? $user['avatar'] : null;
 
         .filter-btn {
             background: rgba(0, 83, 156, 0.1);
-            color: #00539C;
+            color: #38a169;
             border: 2px solid rgba(0, 83, 156, 0.2);
             border-radius: 12px;
             padding: 10px 20px;
@@ -587,7 +587,7 @@ $user_avatar = $user['avatar'] ? $user['avatar'] : null;
 
         .filter-btn.active,
         .filter-btn:hover {
-            background: #00539C;
+            background: #38a169;
             color: #fff;
             transform: translateY(-2px);
             box-shadow: 0 4px 15px rgba(0, 83, 156, 0.3);
@@ -617,7 +617,7 @@ $user_avatar = $user['avatar'] ? $user['avatar'] : null;
         }
 
         .view-toggle button.active {
-            background: #00539C;
+            background: #38a169;
             color: #fff;
             box-shadow: 0 2px 8px rgba(0, 83, 156, 0.3);
         }
@@ -644,7 +644,7 @@ $user_avatar = $user['avatar'] ? $user['avatar'] : null;
             left: 0;
             right: 0;
             height: 6px;
-            background: linear-gradient(90deg, #00539C, #003366);
+            background: linear-gradient(90deg, #38a169, #38a169);
             transform: scaleX(0);
             transition: transform 0.3s ease;
         }
@@ -727,7 +727,7 @@ $user_avatar = $user['avatar'] ? $user['avatar'] : null;
         .airline-info h4 {
             font-size: 1.3rem;
             font-weight: 700;
-            color: #00539C;
+            color: #38a169;
             margin-bottom: 5px;
         }
 
@@ -753,7 +753,7 @@ $user_avatar = $user['avatar'] ? $user['avatar'] : null;
         .route-code {
             font-size: 1.8rem;
             font-weight: 700;
-            color: #00539C;
+            color: #38a169;
             margin-bottom: 5px;
         }
 
@@ -764,7 +764,7 @@ $user_avatar = $user['avatar'] ? $user['avatar'] : null;
 
         .route-arrow {
             margin: 0 20px;
-            color: #00539C;
+            color: #38a169;
             font-size: 1.5rem;
             position: relative;
         }
@@ -828,7 +828,7 @@ $user_avatar = $user['avatar'] ? $user['avatar'] : null;
 
         .detail-value {
             font-weight: 700;
-            color: #00539C;
+            color: #38a169;
             font-size: 1.1rem;
         }
 
@@ -938,7 +938,7 @@ $user_avatar = $user['avatar'] ? $user['avatar'] : null;
             top: 0;
             bottom: 0;
             width: 2px;
-            background: linear-gradient(to bottom, #00539C, #003366);
+            background: linear-gradient(to bottom, #38a169, #38a169);
         }
 
         .timeline-item {
@@ -954,7 +954,7 @@ $user_avatar = $user['avatar'] ? $user['avatar'] : null;
             width: 16px;
             height: 16px;
             border-radius: 50%;
-            background: #00539C;
+            background: #38a169;
             box-shadow: 0 0 0 4px rgba(0, 83, 156, 0.2);
         }
 
@@ -972,7 +972,7 @@ $user_avatar = $user['avatar'] ? $user['avatar'] : null;
         }
 
         .empty-state h3 {
-            color: #00539C;
+            color: #38a169;
             margin-bottom: 15px;
         }
 
@@ -981,7 +981,7 @@ $user_avatar = $user['avatar'] ? $user['avatar'] : null;
         }
 
         .empty-state .btn {
-            background: linear-gradient(135deg, #00539C, #003366);
+            background: linear-gradient(135deg, #38a169, #38a169);
             color: #fff;
             border: none;
             padding: 12px 30px;
@@ -998,7 +998,7 @@ $user_avatar = $user['avatar'] ? $user['avatar'] : null;
         }
 
         .footer {
-            background: #00539C;
+            background: #38a169;
             color: #fff;
             text-align: center;
             padding: 18px 0 10px 0;
@@ -1114,7 +1114,7 @@ $user_avatar = $user['avatar'] ? $user['avatar'] : null;
         }
 
         ::-webkit-scrollbar-thumb:hover {
-            background: rgba(0, 83, 156, 0.5);
+            background: #38a169;
         }
 
         @keyframes pulse {
@@ -1197,7 +1197,7 @@ $user_avatar = $user['avatar'] ? $user['avatar'] : null;
         <div class="container-fluid">
             <a class="navbar-brand d-flex align-items-center" href="dashboard.php">
                 <img src="../pexels-sevenstormphotography-728824 (1).jpg" alt="Logo" style="width:38px; margin-right:10px; border-radius: 50%; box-shadow: 0 2px 8px rgba(0,0,0,0.3);">
-                SOLA
+                SKYNOVA
             </a>
 
             <!-- CHANGE 1: Enhanced User Section with Pending Payments Icon -->
@@ -1470,7 +1470,7 @@ $user_avatar = $user['avatar'] ? $user['avatar'] : null;
     </div>
 
     <footer class="footer">
-        &copy; <span id="year"></span> Speed of Light Airlines. All rights reserved.
+        &copy; <span id="year"></span> SKYNOVA Airlines. All Rights Reserved.  
     </footer>
 
     <!-- Modals -->

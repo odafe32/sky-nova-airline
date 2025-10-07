@@ -16,10 +16,10 @@ unset($_SESSION['login_error'], $_SESSION['register_success'], $_SESSION['login_
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="description" content="Speed of Light Airlines - Admin Login Portal" />
-    <meta name="keywords" content="airline, admin, login, SOLA, speed of light">
-    <meta name="author" content="Speed of Light Airlines" />
-    <title>Login | Speed of Light Airlines</title>
+    <meta name="description" content="SkyNova Airlines - Secure Login Portal" />
+    <meta name="keywords" content="airline, login, SKYNOVA, aviation, flight management">
+    <meta name="author" content="SkyNova Airlines" />
+    <title>Login | SkyNova Airlines</title>
     <link rel="icon" href="User/assets/images/airline-favicon.ico" type="image/x-icon">
 
     <!-- Google Fonts -->
@@ -31,18 +31,18 @@ unset($_SESSION['login_error'], $_SESSION['register_success'], $_SESSION['login_
 
     <style>
         :root {
-            --brand: #00539C;
-            --brand-dark: #003366;
-            --brand-light: #4A90E2;
-            --accent: #FF6B35;
+            --brand: #10b981;
+            --brand-dark: #059669;
+            --brand-light: #34d399;
+            --accent: #22c55e;
             --success: #22c55e;
             --warning: #f59e0b;
             --danger: #ef4444;
-            --dark: #1a1a1a;
+            --dark: #0f172a;
             --light: #ffffff;
             --muted: #64748b;
-            --bg-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            --card-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            --bg-gradient: linear-gradient(135deg, #10b981 0%, #059669 50%, #34d399 100%);
+            --card-shadow: 0 25px 50px -12px rgba(16, 185, 129, 0.25);
         }
 
         * {
@@ -53,7 +53,7 @@ unset($_SESSION['login_error'], $_SESSION['register_success'], $_SESSION['login_
 
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #00539C 100%);
+            background: linear-gradient(135deg, #10b981 0%, #059669 50%, #34d399 100%);
             min-height: 100vh;
             overflow-x: hidden;
             position: relative;
@@ -221,7 +221,6 @@ unset($_SESSION['login_error'], $_SESSION['register_success'], $_SESSION['login_
             min-height: 600px;
         }
 
-        /* Left Side - Branding */
         .brand-side {
             background: linear-gradient(135deg, var(--brand) 0%, var(--brand-dark) 100%);
             color: white;
@@ -350,12 +349,12 @@ unset($_SESSION['login_error'], $_SESSION['register_success'], $_SESSION['login_
             }
         }
 
-        /* Right Side - Login Form */
         .form-side {
             padding: 60px 50px;
             display: flex;
             flex-direction: column;
             justify-content: center;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.98) 0%, rgba(248, 250, 252, 0.95) 100%);
         }
 
         .form-header {
@@ -400,7 +399,7 @@ unset($_SESSION['login_error'], $_SESSION['register_success'], $_SESSION['login_
         .form-input {
             width: 100%;
             padding: 16px 20px 16px 50px;
-            border: 2px solid rgba(0, 83, 156, 0.1);
+            border: 2px solid rgba(16, 185, 129, 0.1);
             border-radius: 12px;
             font-size: 1rem;
             background: rgba(248, 250, 252, 0.8);
@@ -411,7 +410,7 @@ unset($_SESSION['login_error'], $_SESSION['register_success'], $_SESSION['login_
         .form-input:focus {
             border-color: var(--brand);
             background: white;
-            box-shadow: 0 0 0 4px rgba(0, 83, 156, 0.1);
+            box-shadow: 0 0 0 4px rgba(16, 185, 129, 0.1);
             transform: translateY(-2px);
         }
 
@@ -460,7 +459,7 @@ unset($_SESSION['login_error'], $_SESSION['register_success'], $_SESSION['login_
         .custom-checkbox {
             width: 18px;
             height: 18px;
-            border: 2px solid rgba(0, 83, 156, 0.3);
+            border: 2px solid rgba(16, 185, 129, 0.3);
             border-radius: 4px;
             position: relative;
             cursor: pointer;
@@ -526,7 +525,7 @@ unset($_SESSION['login_error'], $_SESSION['register_success'], $_SESSION['login_
 
         .login-btn:hover {
             transform: translateY(-2px);
-            box-shadow: 0 10px 25px rgba(0, 83, 156, 0.3);
+            box-shadow: 0 10px 25px rgba(16, 185, 129, 0.3);
         }
 
         .login-btn:active {
@@ -698,20 +697,20 @@ unset($_SESSION['login_error'], $_SESSION['register_success'], $_SESSION['login_
                     <div class="brand-logo">
                         <i data-feather="navigation"></i>
                     </div>
-                    <h1 class="brand-title">SOLA</h1>
-                    <p class="brand-subtitle">Speed of Light Airlines</p>
+                    <h1 class="brand-title">SKYNOVA</h1>
+                    <p class="brand-subtitle">Premium Aviation Experience</p>
                     <ul class="brand-features">
                         <li>
                             <i data-feather="shield"></i>
-                            Secured Login
+                            Premium Security
                         </li>
                         <li>
                             <i data-feather="zap"></i>
-                            Fast Performance
+                            Lightning Fast
                         </li>
                         <li>
                             <i data-feather="globe"></i>
-                            Global Flight Management
+                            Global Network
                         </li>
                     </ul>
                 </div>

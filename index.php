@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Speed of Light Airlines - Fly Beyond Imagination</title>
+    <title>SkyNova Airlines - Soar Above the Ordinary</title>
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -22,10 +22,10 @@
 
     <style>
         :root {
-            --primary: #00d4ff;
-            --secondary: #ff6b6b;
-            --accent: #4ecdc4;
-            --dark: #0a0a0a;
+            --primary: #10b981;
+            --secondary: #059669;
+            --accent: #34d399;
+            --dark: #0f172a;
             --light: #ffffff;
             --glass: rgba(255, 255, 255, 0.1);
             --glass-border: rgba(255, 255, 255, 0.2);
@@ -78,60 +78,53 @@
             z-index: -1;
         }
 
-        /* BEAUTIFUL FIXED SKY BLUE TRANSPARENT NAVBAR */
+        /* BEAUTIFUL FIXED GREEN TRANSPARENT NAVBAR */
         .glass-nav {
             background: linear-gradient(135deg,
-                    rgba(135, 206, 250, 0.15) 0%,
-                    /* Light sky blue */
-                    rgba(0, 191, 255, 0.12) 50%,
-                    /* Deep sky blue */
-                    rgba(30, 144, 255, 0.10) 100%
-                    /* Dodger blue */
+                    rgba(16, 185, 129, 0.15) 0%,
+                    rgba(5, 150, 105, 0.12) 50%,
+                    rgba(52, 211, 153, 0.10) 100%
                 );
             backdrop-filter: blur(25px);
-            border-bottom: 1px solid rgba(135, 206, 250, 0.3);
-            box-shadow: 0 8px 32px rgba(0, 191, 255, 0.1);
+            border-bottom: 1px solid rgba(16, 185, 129, 0.3);
+            box-shadow: 0 8px 32px rgba(16, 185, 129, 0.1);
             transition: all 0.3s ease;
         }
 
         /* Remove the dark scrolled state - keep it beautiful always */
         .glass-nav.scrolled {
             background: linear-gradient(135deg,
-                    rgba(135, 206, 250, 0.18) 0%,
-                    /* Slightly more opaque when scrolled */
-                    rgba(0, 191, 255, 0.15) 50%,
-                    rgba(30, 144, 255, 0.12) 100%);
+                    rgba(16, 185, 129, 0.18) 0%,
+                    rgba(5, 150, 105, 0.15) 50%,
+                    rgba(52, 211, 153, 0.12) 100%);
             backdrop-filter: blur(30px);
-            border-bottom: 1px solid rgba(135, 206, 250, 0.4);
-            box-shadow: 0 12px 40px rgba(0, 191, 255, 0.15);
+            border-bottom: 1px solid rgba(16, 185, 129, 0.4);
+            box-shadow: 0 12px 40px rgba(16, 185, 129, 0.15);
         }
 
-        /* Enhanced navbar brand with sky blue gradient */
+        /* Enhanced navbar brand with green gradient */
         .navbar-brand {
             font-family: 'Space Grotesk', sans-serif;
             font-weight: 700;
             font-size: 1.5rem;
             background: linear-gradient(45deg,
-                    #87CEEB,
-                    /* Sky blue */
-                    #00BFFF,
-                    /* Deep sky blue */
-                    #1E90FF
-                    /* Dodger blue */
+                    #10b981,
+                    #34d399,
+                    #6ee7b7
                 );
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
-            filter: drop-shadow(0 2px 8px rgba(135, 206, 250, 0.3));
+            filter: drop-shadow(0 2px 8px rgba(16, 185, 129, 0.3));
             transition: all 0.3s ease;
         }
 
         .navbar-brand:hover {
-            filter: drop-shadow(0 4px 12px rgba(135, 206, 250, 0.5));
+            filter: drop-shadow(0 4px 12px rgba(16, 185, 129, 0.5));
             transform: translateY(-1px);
         }
 
-        /* Beautiful nav links with sky blue accents */
+        /* Beautiful nav links with green accents */
         .nav-link {
             font-weight: 500;
             transition: all 0.3s ease;
@@ -148,19 +141,17 @@
             bottom: -5px;
             left: 50%;
             background: linear-gradient(45deg,
-                    #87CEEB,
-                    /* Sky blue */
-                    #00BFFF
-                    /* Deep sky blue */
+                    #10b981,
+                    #34d399
                 );
             transition: all 0.3s ease;
             transform: translateX(-50%);
-            box-shadow: 0 2px 8px rgba(135, 206, 250, 0.4);
+            box-shadow: 0 2px 8px rgba(16, 185, 129, 0.4);
         }
 
         .nav-link:hover {
-            color: #87CEEB !important;
-            text-shadow: 0 2px 8px rgba(135, 206, 250, 0.4);
+            color: #10b981 !important;
+            text-shadow: 0 2px 8px rgba(16, 185, 129, 0.4);
             transform: translateY(-1px);
         }
 
@@ -168,22 +159,20 @@
             width: 100%;
         }
 
-        /* Enhanced Book Now button with sky blue theme */
+        /* Enhanced Book Now button with green theme */
         .nav-link.neon-btn {
             background: linear-gradient(45deg,
-                    rgba(135, 206, 250, 0.8),
-                    /* Sky blue */
-                    rgba(0, 191, 255, 0.9)
-                    /* Deep sky blue */
+                    rgba(16, 185, 129, 0.8),
+                    rgba(52, 211, 153, 0.9)
                 ) !important;
-            border: 1px solid rgba(135, 206, 250, 0.6);
+            border: 1px solid rgba(16, 185, 129, 0.6);
             border-radius: 25px;
             padding: 12px 24px !important;
             font-weight: 700;
             color: white !important;
             text-transform: uppercase;
             letter-spacing: 1px;
-            box-shadow: 0 4px 15px rgba(135, 206, 250, 0.3);
+            box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3);
             backdrop-filter: blur(10px);
             position: relative;
             overflow: hidden;
@@ -209,14 +198,12 @@
 
         .nav-link.neon-btn:hover {
             background: linear-gradient(45deg,
-                    rgba(135, 206, 250, 1),
-                    /* Full opacity sky blue */
-                    rgba(0, 191, 255, 1)
-                    /* Full opacity deep sky blue */
+                    rgba(16, 185, 129, 1),
+                    rgba(52, 211, 153, 1)
                 ) !important;
             transform: translateY(-3px) !important;
-            box-shadow: 0 8px 25px rgba(135, 206, 250, 0.5) !important;
-            border-color: rgba(135, 206, 250, 0.8);
+            box-shadow: 0 8px 25px rgba(16, 185, 129, 0.5) !important;
+            border-color: rgba(16, 185, 129, 0.8);
         }
 
         .nav-link.neon-btn:hover::after {
@@ -224,33 +211,34 @@
             /* Remove the underline for the button */
         }
 
-        /* Mobile navbar toggler with sky blue theme */
+        /* Mobile navbar toggler with green theme */
         .navbar-toggler {
-            border: 1px solid rgba(135, 206, 250, 0.5) !important;
-            background: rgba(135, 206, 250, 0.1);
+            border: 1px solid rgba(16, 185, 129, 0.5) !important;
+            background: rgba(16, 185, 129, 0.1);
             backdrop-filter: blur(10px);
         }
 
         .navbar-toggler:focus {
-            box-shadow: 0 0 0 0.25rem rgba(135, 206, 250, 0.25) !important;
+            box-shadow: 0 0 0 0.25rem rgba(16, 185, 129, 0.25) !important;
         }
 
         .navbar-toggler-icon {
-            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28135, 206, 250, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2816, 185, 129, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
         }
 
         /* Responsive adjustments */
         @media (max-width: 991px) {
             .navbar-collapse {
+                background: linear-gradient(135deg, rgba(16, 185, 129, 0.95) 0%, rgba(5, 150, 105, 0.92) 100%);
                 background: linear-gradient(135deg,
-                        rgba(135, 206, 250, 0.95) 0%,
-                        rgba(0, 191, 255, 0.92) 100%);
+                        rgba(16, 185, 129, 0.95) 0%,
+                        rgba(5, 150, 105, 0.92) 100%);
                 backdrop-filter: blur(20px);
                 border-radius: 15px;
                 margin-top: 15px;
                 padding: 20px;
-                border: 1px solid rgba(135, 206, 250, 0.3);
-                box-shadow: 0 8px 32px rgba(0, 191, 255, 0.2);
+                border: 1px solid rgba(16, 185, 129, 0.3);
+                box-shadow: 0 8px 32px rgba(16, 185, 129, 0.2);
             }
 
             .nav-link {
@@ -273,7 +261,7 @@
             bottom: 0;
             background: linear-gradient(90deg,
                     transparent 0%,
-                    rgba(135, 206, 250, 0.1) 50%,
+                    rgba(16, 185, 129, 0.1) 50%,
                     transparent 100%);
             pointer-events: none;
             opacity: 0;
@@ -354,10 +342,10 @@
             right: 0;
             bottom: 0;
             background: linear-gradient(135deg,
-                    rgba(0, 10, 20, 0.7) 0%,
-                    rgba(0, 83, 156, 0.3) 25%,
-                    rgba(78, 205, 196, 0.2) 50%,
-                    rgba(0, 10, 20, 0.6) 100%);
+                    rgba(15, 23, 42, 0.7) 0%,
+                    rgba(5, 150, 105, 0.3) 25%,
+                    rgba(16, 185, 129, 0.2) 50%,
+                    rgba(15, 23, 42, 0.6) 100%);
             z-index: -1;
         }
 
@@ -375,7 +363,7 @@
             font-size: 2rem;
             color: rgba(255, 255, 255, 0.15);
             animation: float 25s infinite linear;
-            filter: drop-shadow(0 0 10px rgba(0, 212, 255, 0.3));
+            filter: drop-shadow(0 0 10px rgba(16, 185, 129, 0.3));
         }
 
         @keyframes float {
@@ -417,7 +405,7 @@
             -webkit-text-fill-color: transparent;
             background-clip: text;
             margin-bottom: 1.5rem;
-            text-shadow: 0 0 50px rgba(0, 212, 255, 0.4);
+            text-shadow: 0 0 50px rgba(16, 185, 129, 0.4);
             animation: gradientShift 4s ease-in-out infinite;
             letter-spacing: -2px;
             line-height: 0.9;
@@ -467,7 +455,7 @@
 
         .carousel-dot.active {
             background: var(--primary);
-            box-shadow: 0 0 20px rgba(0, 212, 255, 0.6);
+            box-shadow: 0 0 20px rgba(16, 185, 129, 0.6);
             transform: scale(1.2);
         }
 
@@ -506,8 +494,8 @@
 
         .glass-search:hover {
             transform: translateY(-8px);
-            box-shadow: 0 25px 80px rgba(0, 212, 255, 0.3);
-            border-color: rgba(0, 212, 255, 0.4);
+            box-shadow: 0 25px 80px rgba(16, 185, 129, 0.3);
+            border-color: rgba(16, 185, 129, 0.4);
         }
 
         .glass-input {
@@ -523,7 +511,7 @@
         .glass-input:focus {
             background: rgba(255, 255, 255, 0.15);
             border-color: var(--primary);
-            box-shadow: 0 0 25px rgba(0, 212, 255, 0.4);
+            box-shadow: 0 0 25px rgba(16, 185, 129, 0.4);
             color: white;
             transform: translateY(-2px);
         }
@@ -566,7 +554,7 @@
 
         .neon-btn:hover {
             transform: translateY(-3px);
-            box-shadow: 0 15px 40px rgba(0, 212, 255, 0.5);
+            box-shadow: 0 15px 40px rgba(16, 185, 129, 0.5);
             filter: brightness(1.1);
         }
 
@@ -597,7 +585,7 @@
 
         .morph-card:hover {
             transform: translateY(-20px) scale(1.05);
-            box-shadow: 0 20px 60px rgba(0, 212, 255, 0.3);
+            box-shadow: 0 20px 60px rgba(16, 185, 129, 0.3);
         }
 
         /* Equal Height Cards Fix */
@@ -700,7 +688,7 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
-            filter: drop-shadow(0 0 20px rgba(0, 212, 255, 0.5));
+            filter: drop-shadow(0 0 20px rgba(16, 185, 129, 0.5));
         }
 
         /* Animated Counter */
@@ -715,7 +703,7 @@
 
         /* Footer with Gradient */
         .gradient-footer {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
             position: relative;
         }
 
@@ -820,7 +808,7 @@
     <!-- Glassmorphism Navbar -->
     <nav class="navbar navbar-expand-lg fixed-top glass-nav" id="navbar">
         <div class="container">
-            <a class="navbar-brand" href="./landing.php">✈️ SOLA</a>
+            <a class="navbar-brand" href="./landing.php">🚀 SkyNova</a>
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -840,11 +828,11 @@
     <section class="hero" id="hero">
         <!-- Carousel Background -->
         <div class="hero-carousel" id="heroCarousel">
-            <div class="carousel-slide active" style="background-image: url('https://images.unsplash.com/photo-1436491865332-7a61a109cc05?ixlib=rb-4.0.3&auto=format&fit=crop&w=2074&q=80');"></div>
-            <div class="carousel-slide" style="background-image: url('https://images.unsplash.com/photo-1544016768-982d1b6c1b8a?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');"></div>
+            <div class="carousel-slide active" style="background-image: url('https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');"></div>
+            <div class="carousel-slide" style="background-image: url('https://images.unsplash.com/photo-1488646953014-85cb44e25828?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');"></div>
             <div class="carousel-slide" style="background-image: url('https://images.unsplash.com/photo-1569629743817-70d8db6c323b?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');"></div>
-            <div class="carousel-slide" style="background-image: url('https://images.unsplash.com/photo-1540962351504-03099e0a754b?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');"></div>
-            <div class="carousel-slide" style="background-image: url('https://images.unsplash.com/photo-1583604748347-f8b5c2e0b9b5?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');"></div>
+            <div class="carousel-slide" style="background-image: url('https://images.unsplash.com/photo-1436491865332-7a61a109cc05?ixlib=rb-4.0.3&auto=format&fit=crop&w=2074&q=80');"></div>
+            <div class="carousel-slide" style="background-image: url('https://images.unsplash.com/photo-1518684079-3c830dcef090?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80');"></div>
         </div>
 
         <!-- Floating Elements -->
@@ -856,8 +844,8 @@
         </div>
 
         <div class="hero-content">
-            <h1 class="hero-title" id="heroTitle">FLY BEYOND<br>IMAGINATION</h1>
-            <p class="hero-subtitle" id="heroSubtitle">Experience the future of air travel with Speed of Light Airlines</p>
+            <h1 class="hero-title" id="heroTitle">ELEVATE YOUR<br>JOURNEY</h1>
+            <p class="hero-subtitle" id="heroSubtitle">Where luxury meets the sky - SkyNova Airlines</p>
 
             <div class="glass-search" id="searchBox">
                 <form class="row g-3">
@@ -902,7 +890,7 @@
             <div class="row g-4">
                 <div class="col-md-4 d-flex">
                     <div class="morph-card text-center w-100" data-tilt>
-                        <img src="https://images.unsplash.com/photo-1549144511-f099e773c147?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" class="img-fluid rounded-3 mb-3" alt="Paris">
+                        <img src="https://images.unsplash.com/photo-1518684079-3c830dcef090?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" class="img-fluid rounded-3 mb-3" alt="Paris">
                         <h4>Paris, France</h4>
                         <p>City of Love and Lights</p>
                         <!-- <div class="neon-btn">From $299</div> -->
@@ -910,7 +898,7 @@
                 </div>
                 <div class="col-md-4 d-flex">
                     <div class="morph-card text-center w-100" data-tilt>
-                        <img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf" class="img-fluid rounded-3 mb-3" alt="Tokyo">
+                        <img src="https://images.unsplash.com/photo-1518684079-3c830dcef090?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" class="img-fluid rounded-3 mb-3" alt="Tokyo">
                         <h4>Tokyo, Japan</h4>
                         <p>Where Tradition Meets Future</p>
                         <!-- <div class="neon-btn">From $599</div> -->
@@ -918,7 +906,7 @@
                 </div>
                 <div class="col-md-4 d-flex">
                     <div class="morph-card text-center w-100" data-tilt>
-                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4" class="img-fluid rounded-3 mb-3" alt="New York">
+                        <img src="https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" class="img-fluid rounded-3 mb-3" alt="New York">
                         <h4>New York, USA</h4>
                         <p>The City That Never Sleeps</p>
                         <!-- <div class="neon-btn">From $199</div> -->
@@ -932,7 +920,7 @@
     <section id="features" class="py-5">
         <div class="container">
             <h2 class="text-center mb-5" style="font-family: 'Space Grotesk', sans-serif; font-size: 3rem; font-weight: 700;">
-                Why Choose SOLA?
+                Why Choose SkyNova Airlines?
             </h2>
 
             <div class="row g-4">
@@ -998,7 +986,7 @@
                         <div class="d-flex align-items-center mb-3">
                             <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786" class="rounded-circle me-3" width="60" height="60" alt="Emily">
                             <div>
-                                <h6>Emily Rodriguez</h6>
+                                <h6>Sarah Mitchell</h6>
                                 <div class="text-warning">⭐⭐⭐⭐⭐</div>
                             </div>
                         </div>
@@ -1010,7 +998,7 @@
                         <div class="d-flex align-items-center mb-3">
                             <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d" class="rounded-circle me-3" width="60" height="60" alt="Daniel">
                             <div>
-                                <h6>Daniel Kim</h6>
+                                <h6>Michael Chen</h6>
                                 <div class="text-warning">⭐⭐⭐⭐⭐</div>
                             </div>
                         </div>
@@ -1022,7 +1010,7 @@
                         <div class="d-flex align-items-center mb-3">
                             <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb" class="rounded-circle me-3" width="60" height="60" alt="Sarah">
                             <div>
-                                <h6>Sarah Johnson</h6>
+                                <h6>Jennifer Walsh</h6>
                                 <div class="text-warning">⭐⭐⭐⭐⭐</div>
                             </div>
                         </div>
@@ -1037,7 +1025,7 @@
     <footer class="gradient-footer py-5 text-center position-relative">
         <div class="container position-relative">
             <h3 class="mb-4" style="font-family: 'Space Grotesk', sans-serif;">Ready to Fly?</h3>
-            <p class="mb-4">Join millions of travelers who trust Speed of Light Airlines</p>
+            <p class="mb-4">Join discerning travelers who choose SkyNova Airlines</p>
             <a href="User/login.php" class="neon-btn me-3">Start Your Journey</a>
             <a href="#" class="neon-btn">Download App</a>
 
@@ -1068,7 +1056,7 @@
             </div>
 
             <hr class="my-4">
-            <p>&copy; 2025 Speed of Light Airlines. All rights reserved. Made with ❤️ for travelers.</p>
+            <p>&copy; 2025 SkyNova Airlines. All rights reserved. Elevating travel experiences worldwide.</p>
         </div>
     </footer>
 
@@ -1173,7 +1161,7 @@
                     }
                 },
                 color: {
-                    value: '#00d4ff'
+                    value: '#10b981'
                 },
                 shape: {
                     type: 'circle'
@@ -1189,7 +1177,7 @@
                 line_linked: {
                     enable: true,
                     distance: 150,
-                    color: '#00d4ff',
+                    color: '#10b981',
                     opacity: 0.2,
                     width: 1
                 },
@@ -1369,7 +1357,7 @@
             });
         });
 
-        console.log('🚀 Speed of Light Airlines - Carousel Ready for Takeoff! ✈️');
+        console.log('🚀 SkyNova Airlines - Ready for Takeoff! Elevating Your Journey ✈️');
     </script>
 </body>
 

@@ -363,8 +363,8 @@ function time_elapsed_string($datetime, $full = false)
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --brand: #00539C;
-            --brand-dark: #003366;
+            --brand: #38a169;
+            --brand-dark: #38a169;
             --bg: #f8fafc;
             --card-bg: rgba(255, 255, 255, 0.96);
             --muted: #64748b;
@@ -452,13 +452,14 @@ function time_elapsed_string($datetime, $full = false)
             position: sticky;
             top: 0;
             z-index: 900;
-            background: linear-gradient(135deg, rgba(0, 83, 156, .9), rgba(0, 51, 102, .9));
+            background:#318a5d;
             color: #fff;
             padding: 12px 16px;
             margin-left: 260px;
             backdrop-filter: blur(10px);
-            box-shadow: 0 2px 20px rgba(0, 0, 0, .1)
+            box-shadow: 0 2px 20px rgba(0, 0, 0, .1);
         }
+
 
         .topbar .right {
             display: flex;
@@ -618,7 +619,7 @@ function time_elapsed_string($datetime, $full = false)
         .page-title h1 {
             font-weight: 800;
             letter-spacing: .5px;
-            background: linear-gradient(45deg, #00539C, #003366);
+            background: linear-gradient(45deg, #38a169, #38a169);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent
         }
@@ -646,7 +647,7 @@ function time_elapsed_string($datetime, $full = false)
             left: 0;
             right: 0;
             height: 4px;
-            background: linear-gradient(90deg, #00539C, #003366)
+            background: linear-gradient(90deg, #38a169, #38a169)
         }
 
         .reveal {
@@ -696,7 +697,7 @@ function time_elapsed_string($datetime, $full = false)
         }
 
         .chip-blue {
-            background: linear-gradient(135deg, #00539C, #003366)
+            background: linear-gradient(135deg, #38a169, #38a169)
         }
 
         .chip-green {
@@ -771,7 +772,7 @@ function time_elapsed_string($datetime, $full = false)
     <aside class="sidebar" id="sidebar">
         <div class="brand">
             <img src="../pexels-sevenstormphotography-728824 (1).jpg" alt="Logo">
-            <div class="brand-title">SOLA</div>
+            <div class="brand-title">SKYNOVA</div>
         </div>
         <nav class="nav-section">
             <a href="dashboard.php" class="nav-link"><i data-feather="home"></i> Dashboard</a>

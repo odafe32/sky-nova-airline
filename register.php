@@ -28,10 +28,10 @@ if (isset($_SESSION['register_success'])) {
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="description" content="Speed of Light Airlines - Create Your Account" />
-    <meta name="keywords" content="airline, register, signup, SOLA, speed of light, account">
-    <meta name="author" content="Speed of Light Airlines" />
-    <title>Create Account | Speed of Light Airlines</title>
+    <meta name="description" content="SkyNova Airlines - Create Your Premium Account" />
+    <meta name="keywords" content="airline, register, signup, SKYNOVA, aviation, premium account">
+    <meta name="author" content="SkyNova Airlines" />
+    <title>Create Account | SkyNova Airlines</title>
     <link rel="icon" href="User/assets/images/airline-favicon.ico" type="image/x-icon">
 
     <!-- Google Fonts -->
@@ -43,18 +43,18 @@ if (isset($_SESSION['register_success'])) {
 
     <style>
         :root {
-            --brand: #00539C;
-            --brand-dark: #003366;
-            --brand-light: #4A90E2;
-            --accent: #FF6B35;
+            --brand: #10b981;
+            --brand-dark: #059669;
+            --brand-light: #34d399;
+            --accent: #22c55e;
             --success: #22c55e;
             --warning: #f59e0b;
             --danger: #ef4444;
-            --dark: #1a1a1a;
+            --dark: #0f172a;
             --light: #ffffff;
             --muted: #64748b;
-            --bg-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            --card-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            --bg-gradient: linear-gradient(135deg, #10b981 0%, #059669 50%, #34d399 100%);
+            --card-shadow: 0 25px 50px -12px rgba(16, 185, 129, 0.25);
         }
 
         * {
@@ -65,7 +65,7 @@ if (isset($_SESSION['register_success'])) {
 
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #00539C 100%);
+            background: linear-gradient(135deg, #10b981 0%, #059669 50%, #34d399 100%);
             min-height: 100vh;
             overflow-x: hidden;
             position: relative;
@@ -380,6 +380,7 @@ if (isset($_SESSION['register_success'])) {
             display: flex;
             flex-direction: column;
             justify-content: center;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.98) 0%, rgba(248, 250, 252, 0.95) 100%);
         }
 
         .form-header {
@@ -424,7 +425,7 @@ if (isset($_SESSION['register_success'])) {
         .form-input {
             width: 100%;
             padding: 16px 20px 16px 50px;
-            border: 2px solid rgba(0, 83, 156, 0.1);
+            border: 2px solid rgba(16, 185, 129, 0.1);
             border-radius: 12px;
             font-size: 1rem;
             background: rgba(248, 250, 252, 0.8);
@@ -435,7 +436,7 @@ if (isset($_SESSION['register_success'])) {
         .form-input:focus {
             border-color: var(--brand);
             background: white;
-            box-shadow: 0 0 0 4px rgba(0, 83, 156, 0.1);
+            box-shadow: 0 0 0 4px rgba(16, 185, 129, 0.1);
             transform: translateY(-2px);
         }
 
@@ -504,7 +505,7 @@ if (isset($_SESSION['register_success'])) {
 
         .register-btn:hover {
             transform: translateY(-2px);
-            box-shadow: 0 10px 25px rgba(0, 83, 156, 0.3);
+            box-shadow: 0 10px 25px rgba(16, 185, 129, 0.3);
         }
 
         .register-btn:active {
@@ -678,24 +679,24 @@ if (isset($_SESSION['register_success'])) {
                     <div class="brand-logo">
                         <i data-feather="navigation"></i>
                     </div>
-                    <h1 class="brand-title">SOLA</h1>
-                    <p class="brand-subtitle">Speed of Light Airlines</p>
+                    <h1 class="brand-title">SKYNOVA</h1>
+                    <p class="brand-subtitle">Premium Aviation Experience</p>
                     <ul class="brand-features">
                         <li>
                             <i data-feather="user-plus"></i>
-                            Quick & Easy Registration
+                            Premium Membership
                         </li>
                         <li>
                             <i data-feather="shield"></i>
-                            Secure Account Protection
+                            Secure Registration
                         </li>
                         <li>
                             <i data-feather="zap"></i>
-                            Instant Access to Flights
+                            Instant Activation
                         </li>
                         <li>
                             <i data-feather="globe"></i>
-                            Worldwide Destinations
+                            Global Access
                         </li>
                     </ul>
                 </div>
@@ -704,7 +705,7 @@ if (isset($_SESSION['register_success'])) {
                 <div class="form-side">
                     <div class="form-header">
                         <h2 class="form-title">Create Account</h2>
-                        <p class="form-subtitle">Join thousands of travelers worldwide</p>
+                        <p class="form-subtitle">Join SkyNova's premium travel community</p>
                     </div>
 
                     <!-- PHP Error/Success Messages -->

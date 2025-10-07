@@ -177,7 +177,7 @@ $error_message = $error_messages[$error] ?? $error_messages['unknown'];
         }
 
         .btn-primary-custom {
-            background: linear-gradient(135deg, #00539C 0%, #003366 100%);
+            background: linear-gradient(135deg, #38a169 0%, #38a169 100%);
             color: #fff;
             box-shadow: 0 4px 15px rgba(0, 83, 156, 0.3);
         }
@@ -190,8 +190,8 @@ $error_message = $error_messages[$error] ?? $error_messages['unknown'];
 
         .btn-outline-custom {
             background: transparent;
-            color: #00539C;
-            border: 2px solid #00539C;
+            color: #38a169;
+            border: 2px solid #38a169;
         }
 
         .btn-custom:hover {
@@ -208,7 +208,7 @@ $error_message = $error_messages[$error] ?? $error_messages['unknown'];
         }
 
         .btn-outline-custom:hover {
-            background: #00539C;
+            background: #38a169;
             color: #fff;
         }
 
@@ -297,7 +297,7 @@ $error_message = $error_messages[$error] ?? $error_messages['unknown'];
             <p class="text-muted">
                 <small>
                     Need help? Contact our support team at 
-                    <a href="mailto:support@speedoflightairlines.com" style="color: #00539C;">
+                    <a href="mailto:support@speedoflightairlines.com" style="color: #38a169;">
                         support@speedoflightairlines.com
                     </a>
                 </small>

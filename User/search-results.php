@@ -17,7 +17,7 @@
             font-family: 'Segoe UI', Arial, sans-serif;
         }
         .navbar {
-            background: #00539C;
+            background: #38a169;
         }
         .navbar-brand {
             color: #fff !important;
@@ -109,7 +109,7 @@
             box-shadow: none;
         }
         .sidebar {
-            background: #003366;
+            background: #38a169;
             min-height: 100vh;
             padding-top: 30px;
         }
@@ -121,7 +121,7 @@
             transition: background 0.2s;
         }
         .sidebar .nav-link.active, .sidebar .nav-link:hover {
-            background: #00539C;
+            background: #38a169;
             color: #fff;
         }
         .main-content {
@@ -140,7 +140,7 @@
         .results-summary-bar h2 {
             font-size: 1.35rem;
             font-weight: bold;
-            color: #00539C;
+            color: #38a169;
             margin-bottom: 0;
         }
         .results-summary-bar .summary-detail {
@@ -163,7 +163,7 @@
             box-shadow: 0 2px 8px rgba(0,83,156,0.04);
             font-weight: 600;
             font-size: 1.05rem;
-            color: #00539C;
+            color: #38a169;
             gap: 10px;
         }
         .flight-badge img {
@@ -179,7 +179,7 @@
         }
         .sort-bar label {
             font-weight: 500;
-            color: #00539C;
+            color: #38a169;
         }
         .sort-bar select {
             border-radius: 8px;
@@ -219,7 +219,7 @@
         .flight-time {
             font-size: 1.5rem;
             font-weight: bold;
-            color: #00539C;
+            color: #38a169;
         }
         .flight-airport {
             font-size: 1.1rem;
@@ -251,7 +251,7 @@
         .flight-price {
             font-size: 1.3rem;
             font-weight: bold;
-            color: #00539C;
+            color: #38a169;
         }
         .flight-total {
             color: #333;
@@ -259,7 +259,7 @@
             font-weight: 500;
         }
         .select-btn {
-            background: linear-gradient(90deg, #00539C 0%, #00c6fb 100%);
+            background: linear-gradient(90deg, #38a169 0%, #00c6fb 100%);
             color: #fff;
             border: none;
             border-radius: 8px;
@@ -270,11 +270,11 @@
             box-shadow: 0 2px 8px rgba(0,83,156,0.07);
         }
         .select-btn:hover {
-            background: linear-gradient(90deg, #00c6fb 0%, #00539C 100%);
+            background: linear-gradient(90deg, #00c6fb 0%, #38a169 100%);
             transform: scale(1.04);
         }
         .modal-header {
-            background: #00539C;
+            background: #38a169;
             color: #fff;
         }
         .modal-title {
@@ -301,7 +301,7 @@
         }
         .flight-detail-section-title {
             font-weight: 600;
-            color: #00539C;
+            color: #38a169;
             margin-bottom: 8px;
         }
         .flight-detail-label {
@@ -327,7 +327,7 @@
         .price-detail-total {
             font-size: 1.15rem;
             font-weight: bold;
-            color: #00539C;
+            color: #38a169;
         }
         .checkout-btn {
             background: linear-gradient(90deg, #43e97b 0%, #38f9d7 100%);
@@ -352,7 +352,7 @@
         <div class="container-fluid">
             <a class="navbar-brand d-flex align-items-center" href="#">
                 <img src="../pexels-sevenstormphotography-728824 (1).jpg" alt="Logo" style="width:38px; margin-right:10px;">
-                SOLA            </a>
+                SKYNOVA            </a>
             
             <div class="navbar-user-section">
                 <div class="cart-icon-container" onclick="window.location.href='cart.php'">
@@ -528,7 +528,7 @@
       </div>
     </div>
     <footer class="footer">
-        &copy; <span id="year"></span> Speed of Light Airlines. All rights reserved.
+        &copy; <span id="year"></span> SKYNOVA Airlines. All Rights Reserved.  
     </footer>
     <!-- Bootstrap JS, Feather Icons, and Custom JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
@@ -644,7 +644,7 @@
                     <div class="mb-2">
                         ${d.date} | ${d.time} | ${d.stops}
                     </div>
-                    <button id="changeFlightBtn" class="btn btn-link p-0 mb-2" style="color:#00539C;font-weight:600;">Change Flight</button>
+                    <button id="changeFlightBtn" class="btn btn-link p-0 mb-2" style="color:#38a169;font-weight:600;">Change Flight</button>
                     <div class="d-flex align-items-center mb-2">
                         <img src="${d.logo}" alt="${d.airline}" class="flight-detail-airline-logo">
                         <div>

@@ -209,7 +209,7 @@ try {
         $notifications[] = [
             'icon' => 'calendar',
             'title' => 'New booking',
-            'meta' => "{$activity['flight_no']} · US$ " . number_format($activity['total_amount'], 2) . " · {$timeAgo}",
+            'meta' => "{$activity['flight_no']} · ₦" . number_format($activity['total_amount'], 2) . " · {$timeAgo}",
             'time' => $activity['created_at']
         ];
     }
@@ -271,7 +271,7 @@ function time_elapsed_string($datetime, $full = false)
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        :root{ --brand:#00539C; --brand-dark:#003366; --bg:#f8fafc; --card-bg:rgba(255,255,255,0.96); --muted:#64748b; --success:#22c55e; --warning:#f59e0b; --danger:#ef4444; --info:#0ea5e9; }
+        :root{ --brand:#38a169; --brand-dark:#38a169; --bg:#f8fafc; --card-bg:rgba(255,255,255,0.96); --muted:#64748b; --success:#22c55e; --warning:#f59e0b; --danger:#ef4444; --info:#0ea5e9; }
         *{box-sizing:border-box}
         body{background:var(--bg);font-family:'Inter','Segoe UI',Arial,sans-serif;min-height:100vh;overflow-x:hidden}
         /* Sidebar */
@@ -283,8 +283,18 @@ function time_elapsed_string($datetime, $full = false)
         .nav-link{color:#e5e7eb;border-radius:12px;padding:12px 14px;margin-bottom:8px;display:flex;align-items:center;gap:12px;transition:all .25s ease;position:relative;overflow:hidden}
         .nav-link:hover,.nav-link.active{background:var(--brand);color:#fff;transform:translateX(4px);box-shadow:0 6px 18px rgba(0,83,156,.25)}
         .nav-link i{width:18px;height:18px}
-        /* Topbar */
-        .topbar{position:sticky;top:0;z-index:900;background:linear-gradient(135deg, rgba(0,83,156,.9), rgba(0,51,102,.9));color:#fff;padding:12px 16px;margin-left:260px;backdrop-filter:blur(10px);box-shadow:0 2px 20px rgba(0,0,0,.1)}
+        .topbar {
+            position: sticky;
+            top: 0;
+            z-index: 900;
+            background:#318a5d;
+            color: #fff;
+            padding: 12px 16px;
+            margin-left: 260px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 20px rgba(0, 0, 0, .1);
+        }
+
         .topbar .right{display:flex;align-items:center;gap:14px;margin-left:auto}
         .cart-icon-container{position:relative;cursor:pointer;transition:all .3s ease;padding:6px 10px;border-radius:10px;background:rgba(255,255,255,.12)}
         .cart-icon-container:hover{transform:translateY(-2px);box-shadow:0 4px 14px rgba(0,0,0,.2)}
@@ -348,14 +358,14 @@ function time_elapsed_string($datetime, $full = false)
         }
         /* Content & cards */
         .content{margin-left:260px;padding:22px 18px}
-        .page-title h1{font-weight:800;letter-spacing:.5px;background:linear-gradient(45deg,#00539C,#003366);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+        .page-title h1{font-weight:800;letter-spacing:.5px;background:linear-gradient(45deg,#38a169,#38a169);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
         .smart-card{background:var(--card-bg);border:1px solid rgba(0,83,156,.08);border-radius:20px;padding:18px;box-shadow:0 8px 24px rgba(0,83,156,.10);position:relative;overflow:hidden;transition:transform .35s cubic-bezier(.175,.885,.32,1.275),box-shadow .35s}
         .smart-card:hover{transform:translateY(-6px) scale(1.01);box-shadow:0 18px 50px rgba(0,83,156,.20)}
-        .smart-card::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,#00539C,#003366)}
+        .smart-card::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,#38a169,#38a169)}
         .reveal{opacity:0;transform:translateY(24px);transition:opacity .6s ease, transform .6s ease}
         .reveal.visible{opacity:1;transform:translateY(0)}
         .form-label{font-weight:600;color:#334155}
-        .btn-gradient{border:none;border-radius:12px;font-weight:700;padding:12px 16px;display:inline-flex;align-items:center;gap:8px;color:#fff;box-shadow:0 8px 22px rgba(0,83,156,.25);background:linear-gradient(135deg,#00539C,#003366)}
+        .btn-gradient{border:none;border-radius:12px;font-weight:700;padding:12px 16px;display:inline-flex;align-items:center;gap:8px;color:#fff;box-shadow:0 8px 22px rgba(0,83,156,.25);background:linear-gradient(135deg,#38a169,#38a169)}
         .btn-green{background:linear-gradient(135deg,#10b981,#059669)}
         .badge-soft{background:rgba(0,83,156,.08);color:var(--brand-dark);border:1px solid rgba(0,83,156,.15)}
         .password-visibility{cursor:pointer;color:#64748b}
@@ -373,7 +383,7 @@ function time_elapsed_string($datetime, $full = false)
     <aside class="sidebar" id="sidebar">
         <div class="brand">
             <img src="../pexels-sevenstormphotography-728824 (1).jpg" alt="Logo">
-            <div class="brand-title">SOLA</div>
+            <div class="brand-title">SKYNOVA</div>
         </div>
         <nav class="nav-section">
             <a href="dashboard.php" class="nav-link"><i data-feather="home"></i> Dashboard</a>

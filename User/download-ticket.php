@@ -62,13 +62,13 @@ if (strtotime($booking['flight_date']) >= strtotime('today')) {
     <title>Flight Ticket - <?php echo htmlspecialchars($booking['booking_ref']); ?></title>
     <style>
         body { font-family: Arial, sans-serif; margin: 20px; }
-        .ticket { max-width: 800px; margin: 0 auto; border: 2px solid #00539C; }
-        .header { background: #00539C; color: white; padding: 20px; text-align: center; }
+        .ticket { max-width: 800px; margin: 0 auto; border: 2px solid #38a169; }
+        .header { background: #38a169; color: white; padding: 20px; text-align: center; }
         .content { padding: 20px; }
         .section { margin-bottom: 20px; }
-        .section h3 { color: #00539C; border-bottom: 1px solid #ddd; padding-bottom: 5px; }
+        .section h3 { color: #38a169; border-bottom: 1px solid #ddd; padding-bottom: 5px; }
         .info { display: flex; justify-content: space-between; margin: 10px 0; }
-        .print-btn { position: fixed; top: 20px; right: 20px; background: #00539C; color: white; border: none; padding: 10px 20px; cursor: pointer; }
+        .print-btn { position: fixed; top: 20px; right: 20px; background: #38a169; color: white; border: none; padding: 10px 20px; cursor: pointer; }
         @media print { .print-btn { display: none; } }
     </style>
 </head>

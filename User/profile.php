@@ -280,7 +280,7 @@ if ($stats['total_bookings'] >= 10) {
         }
 
         .navbar {
-            background: #00539C;
+            background: #38a169;
             z-index: 1000;
             box-shadow: 0 2px 20px rgba(0, 83, 156, 0.15);
         }
@@ -390,7 +390,7 @@ if ($stats['total_bookings'] >= 10) {
         }
 
         .sidebar {
-            background: #003366;
+            background: #38a169;
             min-height: 100vh;
             padding-top: 30px;
             z-index: 100;
@@ -425,7 +425,7 @@ if ($stats['total_bookings'] >= 10) {
 
         .sidebar .nav-link.active,
         .sidebar .nav-link:hover {
-            background: #00539C;
+            background: #38a169;
             color: #fff;
             transform: translateX(5px);
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
@@ -438,7 +438,7 @@ if ($stats['total_bookings'] >= 10) {
         }
 
         .profile-header {
-            color: #00539C;
+            color: #38a169;
             text-align: center;
             margin-bottom: 50px;
             animation: fadeInDown 1s ease-out;
@@ -458,7 +458,7 @@ if ($stats['total_bookings'] >= 10) {
             left: 0;
             right: 0;
             height: 4px;
-            background: linear-gradient(90deg, #00539C, #003366);
+            background: linear-gradient(90deg, #38a169, #38a169);
         }
 
         .profile-header h1 {
@@ -466,7 +466,7 @@ if ($stats['total_bookings'] >= 10) {
             font-weight: 700;
             letter-spacing: 2px;
             margin-bottom: 15px;
-            background: linear-gradient(45deg, #00539C, #003366);
+            background: linear-gradient(45deg, #38a169, #38a169);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -501,7 +501,7 @@ if ($stats['total_bookings'] >= 10) {
             left: 0;
             right: 0;
             height: 6px;
-            background: linear-gradient(90deg, #00539C, #003366, #48bb78);
+            background: linear-gradient(90deg, #38a169, #38a169, #48bb78);
             transform: scaleX(0);
             transition: transform 0.4s ease;
         }
@@ -527,7 +527,7 @@ if ($stats['total_bookings'] >= 10) {
             height: 140px;
             object-fit: cover;
             border-radius: 50%;
-            border: 4px solid #00539C;
+            border: 4px solid #38a169;
             box-shadow: 0 8px 32px rgba(0, 83, 156, 0.2);
             background: #f6f9fc;
             transition: all 0.3s ease;
@@ -545,7 +545,7 @@ if ($stats['total_bookings'] >= 10) {
             right: 5px;
             width: 40px;
             height: 40px;
-            background: linear-gradient(135deg, #00539C, #003366);
+            background: linear-gradient(135deg, #38a169, #38a169);
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -589,7 +589,7 @@ if ($stats['total_bookings'] >= 10) {
         .profile-name {
             font-size: 2rem;
             font-weight: 700;
-            color: #00539C;
+            color: #38a169;
             margin-bottom: 8px;
             text-shadow: 0 2px 4px rgba(0, 83, 156, 0.1);
         }
@@ -645,7 +645,7 @@ if ($stats['total_bookings'] >= 10) {
         .profile-stat-value {
             font-size: 1.8rem;
             font-weight: 700;
-            color: #00539C;
+            color: #38a169;
             margin-bottom: 5px;
             text-shadow: 0 2px 4px rgba(0, 83, 156, 0.1);
         }
@@ -657,7 +657,7 @@ if ($stats['total_bookings'] >= 10) {
         }
 
         .edit-btn {
-            background: linear-gradient(135deg, #00539C 0%, #003366 100%);
+            background: linear-gradient(135deg, #38a169 0%, #38a169 100%);
             color: #fff;
             border: none;
             border-radius: 16px;
@@ -719,7 +719,7 @@ if ($stats['total_bookings'] >= 10) {
         .section-title {
             font-size: 1.4rem;
             font-weight: 700;
-            color: #00539C;
+            color: #38a169;
             margin-bottom: 25px;
             position: relative;
             padding-left: 20px;
@@ -733,7 +733,7 @@ if ($stats['total_bookings'] >= 10) {
             transform: translateY(-50%);
             width: 4px;
             height: 20px;
-            background: linear-gradient(135deg, #00539C, #003366);
+            background: linear-gradient(135deg, #38a169, #38a169);
             border-radius: 2px;
         }
 
@@ -765,11 +765,11 @@ if ($stats['total_bookings'] >= 10) {
         .profile-info-value {
             font-size: 1.2rem;
             font-weight: 600;
-            color: #00539C;
+            color: #38a169;
         }
 
         .footer {
-            background: #00539C;
+            background: #38a169;
             color: #fff;
             text-align: center;
             padding: 20px 0 12px 0;
@@ -819,7 +819,7 @@ if ($stats['total_bookings'] >= 10) {
 
         .form-control:focus,
         .form-select:focus {
-            border-color: #00539C;
+            border-color: #38a169;
             box-shadow: 0 0 0 0.2rem rgba(0, 83, 156, 0.15);
             background: #fff;
             transform: translateY(-2px);
@@ -877,7 +877,7 @@ if ($stats['total_bookings'] >= 10) {
             height: 100px;
             object-fit: cover;
             border-radius: 50%;
-            border: 3px solid #00539C;
+            border: 3px solid #38a169;
             margin-bottom: 15px;
             transition: all 0.3s ease;
         }
@@ -1067,7 +1067,7 @@ if ($stats['total_bookings'] >= 10) {
         }
 
         ::-webkit-scrollbar-thumb:hover {
-            background: rgba(0, 83, 156, 0.5);
+            background: #38a169;
         }
     </style>
 </head>
@@ -1089,7 +1089,7 @@ if ($stats['total_bookings'] >= 10) {
         <div class="container-fluid">
             <a class="navbar-brand d-flex align-items-center" href="#">
                 <img src="../pexels-sevenstormphotography-728824 (1).jpg" alt="Logo" style="width:38px; margin-right:10px; border-radius: 50%; box-shadow: 0 2px 8px rgba(0,0,0,0.3);">
-                SOLA
+                SKYNOVA
             </a>
 
             <!-- Enhanced User Section with Cart Icon -->
@@ -1181,7 +1181,7 @@ if ($stats['total_bookings'] >= 10) {
                         <?php if ($user_avatar): ?>
                             <img src="<?php echo htmlspecialchars($user_avatar); ?>" alt="Profile Avatar" class="profile-avatar" id="profileAvatarDisplay">
                         <?php else: ?>
-                            <div class="profile-avatar d-flex align-items-center justify-content-center" style="font-size: 3rem; font-weight: 700; color: #00539C;" id="profileAvatarDisplay">
+                            <div class="profile-avatar d-flex align-items-center justify-content-center" style="font-size: 3rem; font-weight: 700; color: #38a169;" id="profileAvatarDisplay">
                                 <?php echo $avatar_initial; ?>
                             </div>
                         <?php endif; ?>
@@ -1276,7 +1276,7 @@ if ($stats['total_bookings'] >= 10) {
     </div>
 
     <footer class="footer">
-        &copy; <span id="year"></span> Speed of Light Airlines. All rights reserved.
+        &copy; <span id="year"></span> SKYNOVA Airlines. All Rights Reserved.  
     </footer>
 
     <!-- Enhanced Edit Profile Modal -->
@@ -1296,7 +1296,7 @@ if ($stats['total_bookings'] >= 10) {
                             <?php if ($user_avatar): ?>
                                 <img src="<?php echo htmlspecialchars($user_avatar); ?>" alt="Profile Avatar" class="modal-avatar" id="modalAvatarPreview">
                             <?php else: ?>
-                                <div class="modal-avatar d-flex align-items-center justify-content-center" style="font-size: 2rem; font-weight: 700; color: #00539C;" id="modalAvatarPreview">
+                                <div class="modal-avatar d-flex align-items-center justify-content-center" style="font-size: 2rem; font-weight: 700; color: #38a169;" id="modalAvatarPreview">
                                     <?php echo $avatar_initial; ?>
                                 </div>
                             <?php endif; ?>

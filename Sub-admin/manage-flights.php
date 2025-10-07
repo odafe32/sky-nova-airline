@@ -35,12 +35,12 @@ $admin_initial = strtoupper(substr($first_name, 0, 1));
 function generateNextFlightNumber($pdo)
 {
     try {
-        // Get the highest flight number that starts with SOLA
-        $stmt = $pdo->query("SELECT flight_no FROM flights WHERE flight_no LIKE 'SOLA%' ORDER BY flight_no DESC LIMIT 1");
+        // Get the highest flight number that starts with SKYNOVA
+        $stmt = $pdo->query("SELECT flight_no FROM flights WHERE flight_no LIKE 'SKYNOVA%' ORDER BY flight_no DESC LIMIT 1");
         $result = $stmt->fetch();
 
         if ($result) {
-            // Extract number from SOLA001, SOLA002, etc.
+            // Extract number from SKYNOVA001, SKYNOVA002, etc.
             $lastNumber = intval(substr($result['flight_no'], 4));
             $nextNumber = $lastNumber + 1;
         } else {
@@ -48,10 +48,10 @@ function generateNextFlightNumber($pdo)
             $nextNumber = 1;
         }
 
-        // Format as SOLA001, SOLA002, etc.
-        return 'SOLA' . str_pad($nextNumber, 3, '0', STR_PAD_LEFT);
+        // Format as SKYNOVA001, SKYNOVA002, etc.
+        return 'SKYNOVA' . str_pad($nextNumber, 3, '0', STR_PAD_LEFT);
     } catch (PDOException $e) {
-        return 'SOLA001'; // Default if error
+        return 'SKYNOVA001'; // Default if error
     }
 }
 
@@ -416,8 +416,8 @@ $next_flight_no = generateNextFlightNumber($pdo);
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --brand: #00539C;
-            --brand-dark: #003366;
+            --brand: #38a169;
+            --brand-dark: #38a169;
             --bg: #f8fafc;
             --card-bg: rgba(255, 255, 255, 0.96);
             --muted: #64748b;
@@ -674,7 +674,7 @@ $next_flight_no = generateNextFlightNumber($pdo);
         .page-title h1 {
             font-weight: 800;
             letter-spacing: .5px;
-            background: linear-gradient(45deg, #00539C, #003366);
+            background: linear-gradient(45deg, #38a169, #38a169);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent
         }
@@ -702,7 +702,7 @@ $next_flight_no = generateNextFlightNumber($pdo);
             left: 0;
             right: 0;
             height: 4px;
-            background: linear-gradient(90deg, #00539C, #003366)
+            background: linear-gradient(90deg, #38a169, #38a169)
         }
 
         .reveal {
@@ -750,7 +750,7 @@ $next_flight_no = generateNextFlightNumber($pdo);
         }
 
         .chip-blue {
-            background: linear-gradient(135deg, #00539C, #003366)
+            background: linear-gradient(135deg, #38a169, #38a169)
         }
 
         .chip-green {
@@ -899,7 +899,7 @@ $next_flight_no = generateNextFlightNumber($pdo);
     <aside class="sidebar" id="sidebar">
         <div class="brand">
             <img src="../pexels-sevenstormphotography-728824 (1).jpg" alt="Logo">
-            <div class="brand-title">SOLA</div>
+            <div class="brand-title">SKYNOVA</div>
         </div>
         <nav class="nav-section">
             <a href="dashboard.php" class="nav-link"><i data-feather="home"></i> Dashboard</a>
@@ -1040,7 +1040,7 @@ $next_flight_no = generateNextFlightNumber($pdo);
                         </div>
                         <div class="row g-3">
                             <div class="col-md-6">
-                                <label class="form-label">Price (USD)</label>
+                                <label class="form-label">Price (NGN)</label>
                                 <input type="number" step="0.01" class="form-control" id="economyPrice" placeholder="e.g., 450.00" required min="0">
                             </div>
                             <div class="col-md-6">
@@ -1059,7 +1059,7 @@ $next_flight_no = generateNextFlightNumber($pdo);
                         </div>
                         <div class="row g-3">
                             <div class="col-md-6">
-                                <label class="form-label">Price (USD)</label>
+                                <label class="form-label">Price (NGN)</label>
                                 <input type="number" step="0.01" class="form-control" id="businessPrice" placeholder="e.g., 1200.00" required min="0">
                             </div>
                             <div class="col-md-6">
@@ -1078,7 +1078,7 @@ $next_flight_no = generateNextFlightNumber($pdo);
                         </div>
                         <div class="row g-3">
                             <div class="col-md-6">
-                                <label class="form-label">Price (USD)</label>
+                                <label class="form-label">Price (NGN)</label>
                                 <input type="number" step="0.01" class="form-control" id="firstClassPrice" placeholder="e.g., 2500.00" required min="0">
                             </div>
                             <div class="col-md-6">
@@ -1194,7 +1194,7 @@ $next_flight_no = generateNextFlightNumber($pdo);
                             </div>
                             <div class="row g-3">
                                 <div class="col-md-6">
-                                    <label class="form-label">Price (USD)</label>
+                                    <label class="form-label">Price (NGN)</label>
                                     <input type="number" step="0.01" class="form-control" id="editEconomyPrice" required min="0">
                                 </div>
                                 <div class="col-md-6">
@@ -1212,7 +1212,7 @@ $next_flight_no = generateNextFlightNumber($pdo);
                             </div>
                             <div class="row g-3">
                                 <div class="col-md-6">
-                                    <label class="form-label">Price (USD)</label>
+                                    <label class="form-label">Price (NGN)</label>
                                     <input type="number" step="0.01" class="form-control" id="editBusinessPrice" required min="0">
                                 </div>
                                 <div class="col-md-6">
@@ -1230,7 +1230,7 @@ $next_flight_no = generateNextFlightNumber($pdo);
                             </div>
                             <div class="row g-3">
                                 <div class="col-md-6">
-                                    <label class="form-label">Price (USD)</label>
+                                    <label class="form-label">Price (NGN)</label>
                                     <input type="number" step="0.01" class="form-control" id="editFirstClassPrice" required min="0">
                                 </div>
                                 <div class="col-md-6">

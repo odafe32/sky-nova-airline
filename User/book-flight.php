@@ -332,7 +332,7 @@ if ($is_search_request) {
         }
 
         .navbar {
-            background: #00539C;
+            background: #10b981;
             z-index: 1000;
             box-shadow: 0 2px 20px rgba(0, 83, 156, 0.15);
         }
@@ -448,7 +448,7 @@ if ($is_search_request) {
         }
 
         .sidebar {
-            background: #003366;
+            background: #38a169;
             min-height: 100vh;
             padding-top: 30px;
             z-index: 100;
@@ -483,7 +483,7 @@ if ($is_search_request) {
 
         .sidebar .nav-link.active,
         .sidebar .nav-link:hover {
-            background: #00539C;
+            background: #10b981;
             color: #fff;
             transform: translateX(5px);
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
@@ -496,7 +496,7 @@ if ($is_search_request) {
         }
 
         .book-flight-header {
-            color: #00539C;
+            color: #10b981;
             text-align: center;
             margin-bottom: 50px;
             animation: fadeInDown 1s ease-out;
@@ -516,7 +516,7 @@ if ($is_search_request) {
             left: 0;
             right: 0;
             height: 4px;
-            background: linear-gradient(90deg, #00539C, #003366);
+            background: linear-gradient(90deg, #10b981, #38a169);
         }
 
         .book-flight-header h1 {
@@ -524,7 +524,7 @@ if ($is_search_request) {
             font-weight: 700;
             letter-spacing: 2px;
             margin-bottom: 15px;
-            background: linear-gradient(45deg, #00539C, #003366);
+            background: linear-gradient(45deg, #10b981, #38a169);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -570,7 +570,7 @@ if ($is_search_request) {
         }
 
         .modal-header {
-            background: linear-gradient(135deg, #00539C, #003366);
+            background: linear-gradient(135deg, #10b981, #38a169);
             color: #fff;
             border-radius: 20px 20px 0 0;
             padding: 20px 30px;
@@ -638,7 +638,7 @@ if ($is_search_request) {
         .city-name {
             font-size: 1.5rem;
             font-weight: 700;
-            color: #00539C;
+            color: #10b981;
             margin-bottom: 2px;
         }
 
@@ -649,7 +649,7 @@ if ($is_search_request) {
         }
 
         .route-separator {
-            color: #00539C;
+            color: #10b981;
             font-size: 1.2rem;
             margin: 0 10px;
         }
@@ -673,7 +673,7 @@ if ($is_search_request) {
 
         .airline-badge {
             background: rgba(0, 83, 156, 0.1);
-            color: #00539C;
+            color: #10b981;
             padding: 6px 12px;
             border-radius: 12px;
             font-size: 0.85rem;
@@ -707,7 +707,7 @@ if ($is_search_request) {
         .price-value {
             font-size: 0.9rem;
             font-weight: 700;
-            color: #00539C;
+            color: #10b981;
         }
 
         .select-flight-indicator {
@@ -715,7 +715,7 @@ if ($is_search_request) {
             right: 20px;
             top: 50%;
             transform: translateY(-50%);
-            color: #00539C;
+            color: #10b981;
             opacity: 0;
             transition: all 0.3s ease;
         }
@@ -764,7 +764,7 @@ if ($is_search_request) {
 
         .filter-select:focus {
             outline: none;
-            border-color: #00539C;
+            border-color: #10b981;
             box-shadow: 0 0 0 2px rgba(0, 83, 156, 0.1);
         }
 
@@ -776,13 +776,13 @@ if ($is_search_request) {
 
         .no-flights-message i {
             font-size: 3rem;
-            color: #00539C;
+            color: #10b981;
             margin-bottom: 20px;
         }
 
         /* Rest of your existing styles... */
         .checkout-header {
-            color: #00539C;
+            color: #10b981;
             text-align: center;
             margin-bottom: 40px;
             animation: fadeInDown 1s ease-out;
@@ -802,7 +802,7 @@ if ($is_search_request) {
             left: 0;
             right: 0;
             height: 4px;
-            background: linear-gradient(90deg, #00539C, #003366);
+            background: linear-gradient(90deg, #10b981, #38a169);
         }
 
         .checkout-header h1 {
@@ -810,7 +810,7 @@ if ($is_search_request) {
             font-weight: 700;
             letter-spacing: 2px;
             margin-bottom: 10px;
-            background: linear-gradient(45deg, #00539C, #003366);
+            background: linear-gradient(45deg, #10b981, #38a169);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -838,7 +838,7 @@ if ($is_search_request) {
             left: 0;
             right: 0;
             height: 6px;
-            background: linear-gradient(90deg, #00539C, #003366);
+            background: linear-gradient(90deg, #10b981, #38a169);
             transform: scaleX(0);
             transition: transform 0.3s ease;
         }
@@ -872,7 +872,7 @@ if ($is_search_request) {
 
         .form-control:focus,
         .form-select:focus {
-            border-color: #00539C;
+            border-color: #10b981;
             box-shadow: 0 0 0 0.2rem rgba(0, 83, 156, 0.15);
             background: #fff;
             transform: translateY(-2px);
@@ -895,7 +895,7 @@ if ($is_search_request) {
         }
 
         .city-search-input:focus {
-            border-color: #00539C;
+            border-color: #10b981;
             box-shadow: 0 0 0 0.2rem rgba(0, 83, 156, 0.15);
             background: #fff;
             transform: translateY(-2px);
@@ -918,7 +918,7 @@ if ($is_search_request) {
             left: 0;
             right: 0;
             background: #fff;
-            border: 2px solid #00539C;
+            border: 2px solid #10b981;
             border-top: none;
             border-radius: 0 0 12px 12px;
             max-height: 250px;
@@ -971,7 +971,7 @@ if ($is_search_request) {
 
         .city-code {
             font-size: 0.85rem;
-            color: #00539C;
+            color: #10b981;
             font-weight: 700;
             background: rgba(0, 83, 156, 0.1);
             padding: 2px 8px;
@@ -996,7 +996,7 @@ if ($is_search_request) {
         }
 
         .search-btn {
-            background: linear-gradient(135deg, #00539C 0%, #003366 100%);
+            background: linear-gradient(135deg, #10b981 0%, #38a169 100%);
             color: #fff;
             font-weight: 600;
             border: none;
@@ -1059,7 +1059,7 @@ if ($is_search_request) {
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            background: #00539C;
+            background: #10b981;
             color: #fff;
             border: none;
             border-radius: 50%;
@@ -1098,7 +1098,7 @@ if ($is_search_request) {
         }
 
         .search-summary h5 {
-            color: #00539C;
+            color: #10b981;
             font-weight: 600;
             margin-bottom: 15px;
         }
@@ -1120,7 +1120,7 @@ if ($is_search_request) {
         }
 
         .search-detail span {
-            color: #00539C;
+            color: #10b981;
             font-weight: 600;
         }
 
@@ -1203,7 +1203,7 @@ if ($is_search_request) {
         .airline-logo {
             width: 50px;
             height: 50px;
-            background: linear-gradient(135deg, #00539C, #003366);
+            background: linear-gradient(135deg, #10b981, #38a169);
             border-radius: 12px;
             display: flex;
             align-items: center;
@@ -1214,7 +1214,7 @@ if ($is_search_request) {
         }
 
         .airline-details h4 {
-            color: #00539C;
+            color: #10b981;
             font-weight: 700;
             margin-bottom: 5px;
         }
@@ -1247,7 +1247,7 @@ if ($is_search_request) {
         }
 
         .route-point h3 {
-            color: #00539C;
+            color: #10b981;
             font-weight: 700;
             font-size: 2rem;
             margin-bottom: 5px;
@@ -1272,16 +1272,16 @@ if ($is_search_request) {
             left: 20%;
             right: 20%;
             height: 2px;
-            background: linear-gradient(90deg, #00539C, #003366);
+            background: linear-gradient(90deg, #10b981, #38a169);
             transform: translateY(-50%);
         }
 
         .route-arrow i {
             background: #fff;
-            color: #00539C;
+            color: #10b981;
             padding: 8px;
             border-radius: 50%;
-            border: 2px solid #00539C;
+            border: 2px solid #10b981;
             position: relative;
             z-index: 2;
         }
@@ -1301,7 +1301,7 @@ if ($is_search_request) {
         }
 
         .detail-item i {
-            color: #00539C;
+            color: #10b981;
             font-size: 1.5rem;
             margin-bottom: 8px;
             display: block;
@@ -1314,7 +1314,7 @@ if ($is_search_request) {
         }
 
         .detail-item span {
-            color: #00539C;
+            color: #10b981;
             font-weight: 600;
         }
 
@@ -1333,13 +1333,13 @@ if ($is_search_request) {
         }
 
         .pricing-header h5 {
-            color: #00539C;
+            color: #10b981;
             font-weight: 700;
             margin: 0;
         }
 
         .class-badge {
-            background: linear-gradient(135deg, #00539C, #003366);
+            background: linear-gradient(135deg, #10b981, #38a169);
             color: #fff;
             padding: 6px 12px;
             border-radius: 20px;
@@ -1359,11 +1359,11 @@ if ($is_search_request) {
             border-bottom: none;
             font-weight: 700;
             font-size: 1.1rem;
-            color: #00539C;
+            color: #10b981;
         }
 
         .select-flight-btn {
-            background: linear-gradient(135deg, #00539C 0%, #003366 100%);
+            background: linear-gradient(135deg, #10b981 0%, #38a169 100%);
             color: #fff;
             font-weight: 600;
             border: none;
@@ -1401,7 +1401,7 @@ if ($is_search_request) {
         }
 
         .footer {
-            background: #00539C;
+            background: #10b981;
             color: #fff;
             text-align: center;
             padding: 18px 0 10px 0;
@@ -1554,7 +1554,7 @@ if ($is_search_request) {
         }
 
         ::-webkit-scrollbar-thumb:hover {
-            background: rgba(0, 83, 156, 0.5);
+            background: #38a169;
         }
 
         .city-dropdown::-webkit-scrollbar {
@@ -1646,7 +1646,7 @@ if ($is_search_request) {
         <div class="container-fluid">
             <a class="navbar-brand d-flex align-items-center" href="dashboard.php">
                 <img src="../pexels-sevenstormphotography-728824 (1).jpg" alt="Logo" style="width:38px; margin-right:10px; border-radius: 50%; box-shadow: 0 2px 8px rgba(0,0,0,0.3);">
-                SOLA
+                SKYNOVA
             </a>
 
             <!-- Enhanced User Section with Cart Icon -->
@@ -1789,9 +1789,7 @@ if ($is_search_request) {
                                         </div>
 
                                         <!-- Swap Button -->
-                                        <button type="button" class="swap-btn" id="swapBtn" title="Swap cities">
-                                            <i data-feather="refresh-cw"></i>
-                                        </button>
+                                    
 
                                         <!-- To -->
                                         <div style="flex: 1;">
@@ -1838,7 +1836,7 @@ if ($is_search_request) {
 
                                 <!-- Search Button -->
                                 <div class="col-md-3 d-grid">
-                                    <button type="submit" class="btn search-btn btn-lg" id="searchBtn" disabled>
+                                    <button type="submit" class="btn search-btn btn-lg" id="searchBtn" disabled style="color: white;">
                                         <i data-feather="search"></i>
                                         Search Flights
                                     </button>
@@ -2140,7 +2138,7 @@ if ($is_search_request) {
     </div>
 
     <footer class="footer">
-        &copy; <span id="year"></span> Speed of Light Airlines. All rights reserved.
+        &copy; <span id="year"></span> SKYNOVA Airlines. All Rights Reserved.  
     </footer>
 
     <!-- JS -->

@@ -341,8 +341,8 @@ function getClassMultiplier($class) {
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --brand: #00539C;
-            --brand-dark: #003366;
+            --brand: #38a169;
+            --brand-dark: #38a169;
             --bg: #f8fafc;
             --card-bg: rgba(255, 255, 255, 0.96);
             --muted: #64748b;
@@ -539,7 +539,7 @@ function getClassMultiplier($class) {
         .page-title h1 {
             font-weight: 800;
             letter-spacing: .5px;
-            background: linear-gradient(45deg, #00539C, #003366);
+            background: linear-gradient(45deg, #38a169, #38a169);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent
         }
@@ -567,7 +567,7 @@ function getClassMultiplier($class) {
             left: 0;
             right: 0;
             height: 4px;
-            background: linear-gradient(90deg, #00539C, #003366)
+            background: linear-gradient(90deg, #38a169, #38a169)
         }
 
         .reveal {
@@ -621,7 +621,7 @@ function getClassMultiplier($class) {
         }
 
         .chip-blue {
-            background: linear-gradient(135deg, #00539C, #003366)
+            background: linear-gradient(135deg, #38a169, #38a169)
         }
 
         .chip-green {
@@ -695,7 +695,7 @@ function getClassMultiplier($class) {
         }
 
         .stat-card.total::before {
-            background: linear-gradient(90deg, #00539C, #003366);
+            background: linear-gradient(90deg, #38a169, #38a169);
         }
 
         .stat-card.seats::before {
@@ -927,7 +927,7 @@ function getClassMultiplier($class) {
     <aside class="sidebar" id="sidebar">
         <div class="brand">
             <img src="../pexels-sevenstormphotography-728824 (1).jpg" alt="Logo">
-            <div class="brand-title">SOLA</div>
+            <div class="brand-title">SKYNOVA</div>
         </div>
         <nav class="nav-section">
             <a href="dashboard.php" class="nav-link"><i data-feather="home"></i> Dashboard</a>

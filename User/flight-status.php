@@ -64,7 +64,7 @@
         }
         
         .navbar {
-            background: #00539C;
+            background: #38a169;
             z-index: 1000;
             box-shadow: 0 2px 20px rgba(0, 83, 156, 0.15);
         }
@@ -173,7 +173,7 @@
         }
         
         .sidebar {
-            background: #003366;
+            background: #38a169;
             min-height: 100vh;
             padding-top: 30px;
             z-index: 100;
@@ -207,7 +207,7 @@
         }
         
         .sidebar .nav-link.active, .sidebar .nav-link:hover {
-            background: #00539C;
+            background: #38a169;
             color: #fff;
             transform: translateX(5px);
             box-shadow: 0 4px 15px rgba(0,0,0,0.2);
@@ -220,7 +220,7 @@
         }
         
         .status-header {
-            color: #00539C;
+            color: #38a169;
             text-align: center;
             margin-bottom: 50px;
             animation: fadeInDown 1s ease-out;
@@ -240,7 +240,7 @@
             left: 0;
             right: 0;
             height: 4px;
-            background: linear-gradient(90deg, #00539C, #003366);
+            background: linear-gradient(90deg, #38a169, #38a169);
         }
         
         .status-header h1 {
@@ -248,7 +248,7 @@
             font-weight: 700;
             letter-spacing: 2px;
             margin-bottom: 15px;
-            background: linear-gradient(45deg, #00539C, #003366);
+            background: linear-gradient(45deg, #38a169, #38a169);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -282,7 +282,7 @@
             left: 0;
             right: 0;
             height: 4px;
-            background: linear-gradient(90deg, #00539C, #003366);
+            background: linear-gradient(90deg, #38a169, #38a169);
         }
         
         .search-tabs {
@@ -307,7 +307,7 @@
         }
         
         .search-tab.active {
-            background: #00539C;
+            background: #38a169;
             color: #fff;
             box-shadow: 0 4px 15px rgba(0, 83, 156, 0.3);
             transform: translateY(-2px);
@@ -330,14 +330,14 @@
         }
         
         .form-control:focus, .form-select:focus {
-            border-color: #00539C;
+            border-color: #38a169;
             box-shadow: 0 0 0 0.2rem rgba(0, 83, 156, 0.15);
             background: #fff;
             transform: translateY(-2px);
         }
         
         .search-btn {
-            background: linear-gradient(135deg, #00539C 0%, #003366 100%);
+            background: linear-gradient(135deg, #38a169 0%, #38a169 100%);
             color: #fff;
             font-weight: 600;
             border: none;
@@ -394,7 +394,7 @@
         
         .filter-btn {
             background: rgba(0, 83, 156, 0.1);
-            color: #00539C;
+            color: #38a169;
             border: 2px solid rgba(0, 83, 156, 0.2);
             border-radius: 12px;
             padding: 8px 20px;
@@ -404,7 +404,7 @@
         }
         
         .filter-btn.active, .filter-btn:hover {
-            background: #00539C;
+            background: #38a169;
             color: #fff;
             transform: translateY(-2px);
             box-shadow: 0 4px 15px rgba(0, 83, 156, 0.3);
@@ -439,7 +439,7 @@
             left: 0;
             right: 0;
             height: 6px;
-            background: linear-gradient(90deg, #00539C, #003366);
+            background: linear-gradient(90deg, #38a169, #38a169);
             transform: scaleX(0);
             transition: transform 0.3s ease;
         }
@@ -484,7 +484,7 @@
         .airline-info h4 {
             font-size: 1.3rem;
             font-weight: 700;
-            color: #00539C;
+            color: #38a169;
             margin-bottom: 5px;
         }
         
@@ -541,7 +541,7 @@
         
         .status-scheduled {
             background: linear-gradient(135deg, #e3f2fd, #90caf9);
-            color: #00539C;
+            color: #38a169;
             box-shadow: 0 2px 10px rgba(0, 83, 156, 0.2);
         }
         
@@ -585,7 +585,7 @@
         .route-code {
             font-size: 1.8rem;
             font-weight: 700;
-            color: #00539C;
+            color: #38a169;
             margin-bottom: 5px;
         }
         
@@ -596,7 +596,7 @@
         
         .route-arrow {
             margin: 0 20px;
-            color: #00539C;
+            color: #38a169;
             font-size: 1.5rem;
             position: relative;
         }
@@ -653,7 +653,7 @@
         
         .detail-value {
             font-weight: 700;
-            color: #00539C;
+            color: #38a169;
             font-size: 1.1rem;
         }
         
@@ -712,7 +712,7 @@
         }
         
         .footer {
-            background: #00539C;
+            background: #38a169;
             color: #fff;
             text-align: center;
             padding: 18px 0 10px 0;
@@ -801,7 +801,7 @@
         }
         
         ::-webkit-scrollbar-thumb:hover {
-            background: rgba(0, 83, 156, 0.5);
+            background: #38a169;
         }
     </style>
 </head>
@@ -822,7 +822,7 @@
         <div class="container-fluid">
             <a class="navbar-brand d-flex align-items-center" href="#">
                 <img src="../pexels-sevenstormphotography-728824 (1).jpg" alt="Logo" style="width:38px; margin-right:10px; border-radius: 50%; box-shadow: 0 2px 8px rgba(0,0,0,0.3);">
-                SOLA
+                SKYNOVA
             </a>
             
             <!-- Enhanced User Section with Cart Icon -->
@@ -1376,7 +1376,7 @@
     </div>
     
     <footer class="footer">
-        &copy; <span id="year"></span> Speed of Light Airlines. All rights reserved.
+        &copy; <span id="year"></span> SKYNOVA Airlines. All Rights Reserved.  
     </footer>
     
     <!-- JS -->

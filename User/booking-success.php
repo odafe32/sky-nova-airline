@@ -309,7 +309,7 @@ $user_avatar = $user['avatar'] ? $user['avatar'] : null;
         }
         
         .booking-ref {
-            background: linear-gradient(135deg, #00539C, #003366);
+            background: linear-gradient(135deg, #38a169, #38a169);
             color: #fff;
             padding: 15px 25px;
             border-radius: 15px;
@@ -339,7 +339,7 @@ $user_avatar = $user['avatar'] ? $user['avatar'] : null;
         }
         
         .detail-value {
-            color: #00539C;
+            color: #38a169;
             font-weight: 600;
         }
         
@@ -370,7 +370,7 @@ $user_avatar = $user['avatar'] ? $user['avatar'] : null;
         }
         
         .btn-primary {
-            background: linear-gradient(135deg, #00539C, #003366);
+            background: linear-gradient(135deg, #38a169, #38a169);
             color: #fff;
             box-shadow: 0 5px 20px rgba(0, 83, 156, 0.3);
         }
@@ -528,7 +528,7 @@ $user_avatar = $user['avatar'] ? $user['avatar'] : null;
         <div class="container-fluid">
             <a class="navbar-brand d-flex align-items-center" href="dashboard.php">
                 <img src="../pexels-sevenstormphotography-728824 (1).jpg" alt="Logo" style="width:38px; margin-right:10px; border-radius: 50%; box-shadow: 0 2px 8px rgba(0,0,0,0.3);">
-                SOLA
+                SKYNOVA
             </a>
             
             <div class="navbar-user-section">

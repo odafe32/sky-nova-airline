@@ -137,7 +137,7 @@ $user = $stmt->fetch(PDO::FETCH_ASSOC);
         }
 
         .booking-details h3 {
-            color: #00539C;
+            color: #38a169;
             margin-bottom: 25px;
             font-weight: 600;
             display: flex;
@@ -190,7 +190,7 @@ $user = $stmt->fetch(PDO::FETCH_ASSOC);
         .route-code {
             font-size: 1.8rem;
             font-weight: 700;
-            color: #00539C;
+            color: #38a169;
         }
 
         .route-city {
@@ -199,7 +199,7 @@ $user = $stmt->fetch(PDO::FETCH_ASSOC);
         }
 
         .route-arrow {
-            color: #00539C;
+            color: #38a169;
             font-size: 1.5rem;
         }
 
@@ -226,7 +226,7 @@ $user = $stmt->fetch(PDO::FETCH_ASSOC);
         }
 
         .btn-primary-custom {
-            background: linear-gradient(135deg, #00539C 0%, #003366 100%);
+            background: linear-gradient(135deg, #38a169 0%, #38a169 100%);
             color: #fff;
             box-shadow: 0 4px 15px rgba(0, 83, 156, 0.3);
         }
@@ -239,8 +239,8 @@ $user = $stmt->fetch(PDO::FETCH_ASSOC);
 
         .btn-outline-custom {
             background: transparent;
-            color: #00539C;
-            border: 2px solid #00539C;
+            color: #38a169;
+            border: 2px solid #38a169;
         }
 
         .btn-custom:hover {
@@ -257,7 +257,7 @@ $user = $stmt->fetch(PDO::FETCH_ASSOC);
         }
 
         .btn-outline-custom:hover {
-            background: #00539C;
+            background: #38a169;
             color: #fff;
         }
 

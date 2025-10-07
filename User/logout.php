@@ -21,7 +21,7 @@ if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
 
     // Optional: Set a logout success message
     session_start(); // Start new session for the message
-    $_SESSION['logout_success'] = "You have been successfully logged out. Thank you for using SOLA!";
+    $_SESSION['logout_success'] = "You have been successfully logged out. Thank you for using SKYNOVA!";
 
     // Redirect to login page
     header("Location: ../login.php");

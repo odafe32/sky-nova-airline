@@ -144,13 +144,13 @@ try {
 <html lang="en">
 
 <head>
-    <title>Speed of Light Airlines | Dashboard</title>
+    <title>SkyNova Airlines | Dashboard</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="description" content="Airline Booking System Dashboard" />
-    <meta name="keywords" content="airline, booking, flights, dashboard">
-    <meta name="author" content="Speed of Light Airlines" />
+    <meta name="description" content="SkyNova Airlines Premium Dashboard" />
+    <meta name="keywords" content="airline, dashboard, flights, SKYNOVA, premium">
+    <meta name="author" content="SkyNova Airlines" />
     <link rel="icon" href="assets/images/airline-favicon.ico" type="image/x-icon">
     <!-- Bootstrap 5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -188,7 +188,7 @@ try {
 
         .particle {
             position: absolute;
-            background: rgba(0, 83, 156, 0.08);
+            background: rgba(16, 185, 129, 0.08);
             border-radius: 50%;
             animation: float 8s ease-in-out infinite;
         }
@@ -264,9 +264,9 @@ try {
         }
 
         .navbar {
-            background: #00539C;
+            background: #10b981;
             z-index: 1000;
-            box-shadow: 0 2px 20px rgba(0, 83, 156, 0.15);
+            box-shadow: 0 2px 20px rgba(16, 185, 129, 0.15);
         }
 
         .navbar-brand {
@@ -320,7 +320,7 @@ try {
             position: absolute;
             top: -5px;
             right: -5px;
-            background: linear-gradient(135deg, #ff6b6b, #ee5a52);
+            background: linear-gradient(135deg, #10b981, #059669);
             color: #fff;
             border-radius: 50%;
             width: 22px;
@@ -331,7 +331,7 @@ try {
             font-size: 0.75rem;
             font-weight: 600;
             animation: pulse 2s infinite;
-            box-shadow: 0 2px 8px rgba(255, 107, 107, 0.4);
+            box-shadow: 0 2px 8px rgba(16, 185, 129, 0.4);
         }
 
         .user-info {
@@ -373,11 +373,11 @@ try {
         }
 
         .sidebar {
-            background: #003366;
+            background: #059669;
             min-height: 100vh;
             padding-top: 30px;
             z-index: 100;
-            box-shadow: 2px 0 20px rgba(0, 51, 102, 0.1);
+            box-shadow: 2px 0 20px rgba(5, 150, 105, 0.1);
         }
 
         .sidebar .nav-link {
@@ -398,7 +398,7 @@ try {
             left: -100%;
             width: 100%;
             height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(0, 83, 156, 0.3), transparent);
+            background: linear-gradient(90deg, transparent, rgba(16, 185, 129, 0.3), transparent);
             transition: left 0.5s;
         }
 
@@ -408,7 +408,7 @@ try {
 
         .sidebar .nav-link.active,
         .sidebar .nav-link:hover {
-            background: #00539C;
+            background: #10b981;
             color: #fff;
             transform: translateX(5px);
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
@@ -427,20 +427,20 @@ try {
         .welcome-section {
             position: relative;
             background: linear-gradient(135deg,
-                    rgba(0, 83, 156, 0.08) 0%,
-                    rgba(0, 51, 102, 0.12) 25%,
-                    rgba(72, 187, 120, 0.08) 50%,
-                    rgba(0, 83, 156, 0.10) 75%,
-                    rgba(0, 51, 102, 0.08) 100%);
+                    rgba(16, 185, 129, 0.08) 0%,
+                    rgba(5, 150, 105, 0.12) 25%,
+                    rgba(52, 211, 153, 0.08) 50%,
+                    rgba(16, 185, 129, 0.10) 75%,
+                    rgba(5, 150, 105, 0.08) 100%);
             padding: 60px 40px;
             border-radius: 32px;
             backdrop-filter: blur(20px);
-            border: 2px solid rgba(0, 83, 156, 0.15);
+            border: 2px solid rgba(16, 185, 129, 0.15);
             overflow: hidden;
             box-shadow:
-                0 20px 60px rgba(0, 83, 156, 0.15),
+                0 20px 60px rgba(16, 185, 129, 0.15),
                 inset 0 1px 0 rgba(255, 255, 255, 0.2);
-            color: #00539C;
+            color: #10b981;
             text-align: center;
             margin-bottom: 50px;
             animation: fadeInDown 1s ease-out;
@@ -454,11 +454,11 @@ try {
             right: 0;
             height: 8px;
             background: linear-gradient(90deg,
-                    #00539C 0%,
-                    #48bb78 25%,
-                    #4299e1 50%,
-                    #ed8936 75%,
-                    #00539C 100%);
+                    #10b981 0%,
+                    #34d399 25%,
+                    #6ee7b7 50%,
+                    #22c55e 75%,
+                    #10b981 100%);
             background-size: 200% 100%;
             animation: gradientFlow 4s ease-in-out infinite;
         }
@@ -552,13 +552,13 @@ try {
             align-items: center;
             margin-bottom: 35px;
             background: linear-gradient(135deg,
-                    rgba(0, 83, 156, 0.05) 0%,
-                    rgba(72, 187, 120, 0.05) 100%);
+                    rgba(16, 185, 129, 0.05) 0%,
+                    rgba(52, 211, 153, 0.05) 100%);
             border-radius: 25px;
-            border: 2px solid rgba(0, 83, 156, 0.12);
+            border: 2px solid rgba(16, 185, 129, 0.12);
             overflow: hidden;
             box-shadow:
-                0 10px 30px rgba(0, 83, 156, 0.1),
+                0 10px 30px rgba(16, 185, 129, 0.1),
                 inset 0 1px 0 rgba(255, 255, 255, 0.1);
         }
 
@@ -576,11 +576,11 @@ try {
             letter-spacing: 3px;
             white-space: nowrap;
             background: linear-gradient(45deg,
-                    #00539C 0%,
-                    #48bb78 25%,
-                    #4299e1 50%,
-                    #ed8936 75%,
-                    #00539C 100%);
+                    #10b981 0%,
+                    #34d399 25%,
+                    #6ee7b7 50%,
+                    #22c55e 75%,
+                    #10b981 100%);
             background-size: 400% 400%;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -589,7 +589,7 @@ try {
                 slideText 25s linear infinite,
                 gradientShift 3s ease-in-out infinite,
                 textGlow 2s ease-in-out infinite alternate;
-            text-shadow: 0 0 30px rgba(0, 83, 156, 0.3);
+            text-shadow: 0 0 30px rgba(16, 185, 129, 0.3);
             position: relative;
             z-index: 2;
         }
@@ -602,7 +602,7 @@ try {
             height: 60px;
             background: linear-gradient(90deg,
                     transparent 0%,
-                    rgba(0, 83, 156, 0.3) 50%,
+                    rgba(16, 185, 129, 0.3) 50%,
                     transparent 100%);
             transform: translateY(-50%);
             animation: glowMove 25s linear infinite;
@@ -632,11 +632,11 @@ try {
 
         @keyframes textGlow {
             0% {
-                filter: drop-shadow(0 0 10px rgba(0, 83, 156, 0.3));
+                filter: drop-shadow(0 0 10px rgba(16, 185, 129, 0.3));
             }
 
             100% {
-                filter: drop-shadow(0 0 20px rgba(0, 83, 156, 0.6));
+                filter: drop-shadow(0 0 20px rgba(16, 185, 129, 0.6));
             }
         }
 
@@ -660,7 +660,7 @@ try {
             height: 3px;
             background: linear-gradient(90deg,
                     transparent 0%,
-                    #00539C 50%,
+                    #38a169 50%,
                     transparent 100%);
             animation: borderPulse 3s ease-in-out infinite;
         }
@@ -698,7 +698,7 @@ try {
         .main-description {
             font-size: 1.5rem;
             line-height: 1.8;
-            color: #00539C;
+            color: #38a169;
             font-weight: 500;
             text-align: center;
             margin: 0;
@@ -706,7 +706,7 @@ try {
 
         .typewriter-text {
             display: inline-block;
-            border-right: 3px solid #00539C;
+            border-right: 3px solid #38a169;
             animation: typewriter 4s steps(60) 1s forwards, blink 1s infinite;
             white-space: nowrap;
             overflow: hidden;
@@ -723,7 +723,7 @@ try {
 
             0%,
             50% {
-                border-color: #00539C;
+                border-color: #38a169;
             }
 
             51%,
@@ -753,7 +753,7 @@ try {
             align-items: center;
             gap: 15px;
             padding: 20px 35px;
-            background: linear-gradient(135deg, #00539C 0%, #003366 100%);
+            background: linear-gradient(135deg, #38a169 0%, #38a169 100%);
             border-radius: 50px;
             cursor: pointer;
             transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -866,14 +866,14 @@ try {
 
         .welcome-stats .stat-item {
             text-align: center;
-            color: #00539C;
+            color: #38a169;
         }
 
         .welcome-stats .stat-number {
             font-size: 2.5rem;
             font-weight: 800;
             margin-bottom: 5px;
-            background: linear-gradient(45deg, #00539C, #48bb78);
+            background: linear-gradient(45deg, #38a169, #48bb78);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -956,7 +956,7 @@ try {
         .pulse-badge {
             display: inline-block;
             animation: pulse-glow 2s ease-in-out infinite alternate;
-            background: linear-gradient(135deg, #00539C, #003366) !important;
+            background: linear-gradient(135deg, #38a169, #38a169) !important;
             border: none !important;
             font-size: 1.1rem;
             padding: 12px 24px;
@@ -1001,7 +1001,7 @@ try {
             left: 0;
             right: 0;
             height: 6px;
-            background: linear-gradient(90deg, #00539C, #003366);
+            background: linear-gradient(90deg, #38a169, #38a169);
             transform: scaleX(0);
             transition: transform 0.3s ease;
         }
@@ -1047,7 +1047,7 @@ try {
         }
 
         .card-icon.primary {
-            color: #00539C;
+            color: #38a169;
         }
 
         .card-icon.success {
@@ -1125,7 +1125,7 @@ try {
         }
 
         .btn-primary {
-            background: linear-gradient(135deg, #00539C 0%, #003366 100%);
+            background: linear-gradient(135deg, #38a169 0%, #38a169 100%);
         }
 
         .btn-success {
@@ -1175,7 +1175,7 @@ try {
         .stat-number {
             font-size: 2.5rem;
             font-weight: 700;
-            color: #00539C;
+            color: #38a169;
             margin-bottom: 8px;
         }
 
@@ -1211,7 +1211,7 @@ try {
 
         .flight-info {
             font-weight: 600;
-            color: #00539C;
+            color: #38a169;
             font-size: 1.1rem;
         }
 
@@ -1240,7 +1240,7 @@ try {
         }
 
         .footer {
-            background: #00539C;
+            background: #48bb78;
             color: #fff;
             text-align: center;
             padding: 20px 0 12px 0;
@@ -1367,7 +1367,7 @@ try {
         }
 
         ::-webkit-scrollbar-thumb:hover {
-            background: rgba(0, 83, 156, 0.5);
+            background: #38a169;
         }
     </style>
 </head>
@@ -1390,7 +1390,7 @@ try {
         <div class="container-fluid">
             <a class="navbar-brand d-flex align-items-center" href="#">
                 <img src="../pexels-sevenstormphotography-728824 (1).jpg" alt="Logo" style="width:38px; margin-right:10px; border-radius: 50%; box-shadow: 0 2px 8px rgba(0,0,0,0.3);">
-                SOLA
+                SKYNOVA
             </a>
 
             <!-- Enhanced User Section with Cart Icon -->
@@ -1453,72 +1453,7 @@ try {
                 <!-- Replace the existing welcome section with this enhanced version -->
 
                 <!-- Enhanced Beautiful Welcome Section -->
-                <div class="welcome-section animate__animated animate__fadeInDown">
-                    <!-- Floating Background Elements -->
-                    <div class="welcome-bg-elements">
-                        <div class="floating-plane">✈️</div>
-                        <div class="floating-cloud">☁️</div>
-                        <div class="floating-star">⭐</div>
-                        <div class="floating-globe">🌍</div>
-                    </div>
-
-                    <!-- Enhanced Sliding Header Text with Glow Effect -->
-                    <div class="sliding-header-container">
-                        <div class="sliding-text-wrapper">
-                            <div class="sliding-text">
-                                ✈️ Welcome to Speed of Light Airlines! ✈️ Experience the Future of Air Travel! ✈️ Book Your Next Adventure Today! ✈️ Fly Beyond Limits! ✈️
-                            </div>
-                            <div class="sliding-text-glow"></div>
-                        </div>
-
-                        <!-- Animated Border Lines -->
-                        <div class="animated-border top-border"></div>
-                        <div class="animated-border bottom-border"></div>
-                    </div>
-
-                    <!-- Enhanced Description with Typewriter Effect -->
-                    <div class="description-container">
-                        <p class="main-description">
-                            <span class="typewriter-text" data-text="Book flights, manage your trips, and check your flight status all in one place."></span>
-                            <br>
-                            <span class="sub-description animate__animated animate__fadeInUp animate__delay-2s">
-                                Experience the future of air travel with our cutting-edge booking system.
-                            </span>
-                        </p>
-                    </div>
-
-                    <!-- Enhanced Interactive Badge with Hover Effects -->
-                    <div class="badge-container animate__animated animate__fadeInUp animate__delay-3s">
-                        <div class="enhanced-badge" onclick="showWelcomeMessage()">
-                            <div class="badge-icon">✈️</div>
-                            <div class="badge-text">
-                                <span class="badge-main">Enjoy a seamless travel experience</span>
-                                <span class="badge-sub">Click to explore features</span>
-                            </div>
-                            <div class="badge-glow"></div>
-                            <div class="badge-ripple"></div>
-                        </div>
-                    </div>
-
-                    <!-- Animated Stats Counter -->
-                    <div class="welcome-stats animate__animated animate__fadeInUp animate__delay-4s">
-                        <div class="stat-item">
-                            <div class="stat-number" data-target="1000">0</div>
-                            <div class="stat-label">Happy Travelers</div>
-                        </div>
-                        <div class="stat-divider">|</div>
-                        <div class="stat-item">
-                            <div class="stat-number" data-target="50">0</div>
-                            <div class="stat-label">Destinations</div>
-                        </div>
-                        <div class="stat-divider">|</div>
-                        <div class="stat-item">
-                            <div class="stat-number" data-target="24">0</div>
-                            <div class="stat-label">Hours Service</div>
-                        </div>
-                    </div>
-                </div>
-
+     
                 <!-- Quick Stats Section -->
                 <div class="quick-stats animate__animated animate__fadeInUp">
                     <div class="row">
@@ -1546,7 +1481,7 @@ try {
                 <!-- Recent Activity Section -->
                 <?php if (!empty($recent_bookings)): ?>
                     <div class="quick-stats animate__animated animate__fadeInUp">
-                        <h5 style="color: #00539C; margin-bottom: 20px; font-weight: 700;">
+                        <h5 style="color: #38a169; margin-bottom: 20px; font-weight: 700;">
                             <i data-feather="activity" style="margin-right: 10px;"></i>
                             Recent Bookings
                         </h5>
@@ -1567,7 +1502,7 @@ try {
                                         <div class="status-badge status-<?php echo $booking['status']; ?>">
                                             <?php echo ucfirst($booking['status']); ?>
                                         </div>
-                                        <div style="color: #00539C; font-weight: 600; margin-top: 5px;">
+                                        <div style="color: #38a169; font-weight: 600; margin-top: 5px;">
                                             $<?php echo number_format($booking['total_amount'], 2); ?>
                                         </div>
                                     </div>
@@ -1580,7 +1515,7 @@ try {
                 <!-- Upcoming Flights Section -->
                 <?php if (!empty($upcoming_user_flights)): ?>
                     <div class="quick-stats animate__animated animate__fadeInUp">
-                        <h5 style="color: #00539C; margin-bottom: 20px; font-weight: 700;">
+                        <h5 style="color: #38a169; margin-bottom: 20px; font-weight: 700;">
                             <i data-feather="plane" style="margin-right: 10px;"></i>
                             My Upcoming Flights
                         </h5>
@@ -1598,7 +1533,7 @@ try {
                                         </div>
                                     </div>
                                     <div style="text-align: right;">
-                                        <div style="color: #00539C; font-weight: 600;">
+                                        <div style="color: #38a169; font-weight: 600;">
                                             <?php echo ucfirst($flight['class']); ?> Class
                                         </div>
                                         <div style="color: #666; font-size: 0.9rem;">
@@ -1620,9 +1555,11 @@ try {
                             </div>
                             <div class="card-title">Book a Flight</div>
                             <div class="card-desc">Find and book flights to your favorite destinations worldwide with our smart search engine.</div>
+                            <a href="book-flight.php">
                             <button class="btn btn-primary" onclick="navigateWithLoading('book-flight.php')">
                                 Book Now <i data-feather="arrow-right" style="width:16px;height:16px;margin-left:8px;"></i>
                             </button>
+                            </a>
                         </div>
                     </div>
 
@@ -1633,9 +1570,11 @@ try {
                             </div>
                             <div class="card-title">My Bookings</div>
                             <div class="card-desc">View and manage your upcoming and past flight bookings with detailed information.</div>
+                            <a href="my-bookings.php">
                             <button class="btn btn-success" onclick="navigateWithLoading('my-bookings.php')">
                                 View Bookings <i data-feather="arrow-right" style="width:16px;height:16px;margin-left:8px;"></i>
                             </button>
+                            </a>
                         </div>
                     </div>
 
@@ -1646,9 +1585,11 @@ try {
                             </div>
                             <div class="card-title">Flight Status</div>
                             <div class="card-desc">Check the real-time status of your flights and get live updates on delays or changes.</div>
-                            <button class="btn btn-info" onclick="navigateWithLoading('flight-status.php')">
-                                Check Status <i data-feather="arrow-right" style="width:16px;height:16px;margin-left:8px;"></i>
+                            <a href="flight-status.php">
+                            <button class="btn btn-info "  onclick="navigateWithLoading('flight-status.php')">
+                                Check Status <i data-feather="arrow-right" style="width:16px; height:16px;margin-left:8px; color:white;;"></i>
                             </button>
+                            </a>
                         </div>
                     </div>
 
@@ -1659,9 +1600,11 @@ try {
                             </div>
                             <div class="card-title">My Profile</div>
                             <div class="card-desc">Update your personal information, travel preferences, and account settings.</div>
+                            <a href="profile.php">
                             <button class="btn btn-warning" onclick="navigateWithLoading('profile.php')">
                                 Edit Profile <i data-feather="arrow-right" style="width:16px;height:16px;margin-left:8px;"></i>
                             </button>
+                            </a>
                         </div>
                     </div>
 
@@ -1672,9 +1615,11 @@ try {
                             </div>
                             <div class="card-title">Shopping Cart</div>
                             <div class="card-desc">Review your selected flights and complete your booking with secure payment.</div>
+                            <a href="cart.php">
                             <button class="btn btn-danger" onclick="navigateWithLoading('cart.php')">
                                 View Cart <i data-feather="arrow-right" style="width:16px;height:16px;margin-left:8px;"></i>
                             </button>
+                            </a>
                         </div>
                     </div>
 
@@ -1696,7 +1641,7 @@ try {
     </div>
 
     <footer class="footer">
-        &copy; <span id="year"></span> Speed of Light Airlines. All rights reserved.
+        &copy; <span id="year"></span> SKYNOVA Airlines. All Rights Reserved.  
     </footer>
 
     <!-- JS -->
@@ -1797,7 +1742,7 @@ try {
 
             modal.innerHTML = `
         <div style="
-            background: linear-gradient(135deg, #00539C, #003366);
+            background: linear-gradient(135deg, #38a169, #38a169);
             color: white;
             padding: 40px;
             border-radius: 25px;

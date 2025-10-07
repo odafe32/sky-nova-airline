@@ -1476,7 +1476,7 @@ class PHPMailer
                 return (bool) preg_match(
                     '/^[-\p{L}\p{N}\p{M}.!#$%&\'*+\/=?^_`{|}~]+@[\p{L}\p{N}\p{M}](?:[\p{L}\p{N}\p{M}-]{0,61}' .
                     '[\p{L}\p{N}\p{M}])?(?:\.[\p{L}\p{N}\p{M}]' .
-                    '(?:[-\p{L}\p{N}\p{M}]{0,61}[\p{L}\p{N}\p{M}])?)*$/usD',
+                    '(?:[-\p{L}\p{N}\p{M}]{0,61}[\p{L}\p{N}\p{M}])?)*$/NGN',
                     $address
                 );
             case 'php':

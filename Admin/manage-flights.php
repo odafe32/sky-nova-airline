@@ -35,12 +35,12 @@ $admin_initial = strtoupper(substr($first_name, 0, 1));
 function generateNextFlightNumber($pdo)
 {
     try {
-        // Get the highest flight number that starts with SOLA
-        $stmt = $pdo->query("SELECT flight_no FROM flights WHERE flight_no LIKE 'SOLA%' ORDER BY flight_no DESC LIMIT 1");
+        // Get the highest flight number that starts with SKYNOVA
+        $stmt = $pdo->query("SELECT flight_no FROM flights WHERE flight_no LIKE 'SKYNOVA%' ORDER BY flight_no DESC LIMIT 1");
         $result = $stmt->fetch();
 
         if ($result) {
-            // Extract number from SOLA001, SOLA002, etc.
+            // Extract number from SKYNOVA001, SKYNOVA002, etc.
             $lastNumber = intval(substr($result['flight_no'], 4));
             $nextNumber = $lastNumber + 1;
         } else {
@@ -48,10 +48,10 @@ function generateNextFlightNumber($pdo)
             $nextNumber = 1;
         }
 
-        // Format as SOLA001, SOLA002, etc.
-        return 'SOLA' . str_pad($nextNumber, 3, '0', STR_PAD_LEFT);
+        // Format as SKYNOVA001, SKYNOVA002, etc.
+        return 'SKYNOVA' . str_pad($nextNumber, 3, '0', STR_PAD_LEFT);
     } catch (PDOException $e) {
-        return 'SOLA001'; // Default if error
+        return 'SKYNOVA001'; // Default if error
     }
 }
 
@@ -342,7 +342,7 @@ try {
             'type' => 'payment',
             'icon' => 'credit-card',
             'title' => 'Payment received',
-            'meta' => "{$timeAgo} · Ref: {$payment['booking_ref']} · $" . number_format($payment['amount'], 2),
+            'meta' => "{$timeAgo} · Ref: {$payment['booking_ref']} · ₦" . number_format($payment['amount'], 2),
             'time' => $payment['created_at']
         ];
     }
@@ -416,8 +416,8 @@ $next_flight_no = generateNextFlightNumber($pdo);
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --brand: #00539C;
-            --brand-dark: #003366;
+            --brand: #38a169;
+            --brand-dark: #38a169;
             --bg: #f8fafc;
             --card-bg: rgba(255, 255, 255, 0.96);
             --muted: #64748b;
@@ -508,12 +508,12 @@ $next_flight_no = generateNextFlightNumber($pdo);
             position: sticky;
             top: 0;
             z-index: 900;
-            background: linear-gradient(135deg, rgba(0, 83, 156, .9), rgba(0, 51, 102, .9));
+            background: linear-gradient(135deg, #38a169, #2f855a);
             color: #fff;
             padding: 12px 16px;
             margin-left: 260px;
             backdrop-filter: blur(10px);
-            box-shadow: 0 2px 20px rgba(0, 0, 0, .1)
+            box-shadow: 0 2px 20px rgba(0, 0, 0, .1);
         }
 
         .topbar .right {
@@ -668,31 +668,43 @@ $next_flight_no = generateNextFlightNumber($pdo);
         /* Content and cards */
         .content {
             margin-left: 260px;
-            padding: 22px 18px
+            padding: 22px 18px;
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            min-height: 100vh;
         }
 
         .page-title h1 {
             font-weight: 800;
             letter-spacing: .5px;
-            background: linear-gradient(45deg, #00539C, #003366);
+            background: linear-gradient(45deg, #38a169, #2f855a);
             -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent
+            -webkit-text-fill-color: transparent;
+            font-size: 2.2rem;
+            margin-bottom: 8px;
+        }
+
+        .page-title .text-muted {
+            font-size: 1.1rem;
+            color: #64748b;
+            font-weight: 500;
         }
 
         .smart-card {
-            background: var(--card-bg);
-            border: 1px solid rgba(0, 83, 156, .08);
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.9) 100%);
+            border: 1px solid rgba(56, 161, 105, .15);
             border-radius: 20px;
-            padding: 18px;
-            box-shadow: 0 8px 24px rgba(0, 83, 156, .10);
+            padding: 24px;
+            box-shadow: 0 10px 30px rgba(56, 161, 105, .12);
             position: relative;
             overflow: hidden;
-            transition: transform .35s cubic-bezier(.175, .885, .32, 1.275), box-shadow .35s
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            backdrop-filter: blur(10px);
         }
 
         .smart-card:hover {
-            transform: translateY(-6px) scale(1.01);
-            box-shadow: 0 18px 50px rgba(0, 83, 156, .20)
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 20px 50px rgba(56, 161, 105, .25);
+            border-color: rgba(56, 161, 105, .3);
         }
 
         .smart-card::before {
@@ -701,8 +713,24 @@ $next_flight_no = generateNextFlightNumber($pdo);
             top: 0;
             left: 0;
             right: 0;
-            height: 4px;
-            background: linear-gradient(90deg, #00539C, #003366)
+            height: 5px;
+            background: linear-gradient(90deg, #38a169, #2f855a, #38a169);
+            border-radius: 20px 20px 0 0;
+        }
+
+        .smart-card::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(56, 161, 105, 0.1), transparent);
+            transition: left 0.8s ease;
+        }
+
+        .smart-card:hover::after {
+            left: 100%;
         }
 
         .reveal {
@@ -718,59 +746,376 @@ $next_flight_no = generateNextFlightNumber($pdo);
 
         .form-label {
             font-weight: 600;
-            color: #334155
+            color: #2d3748;
+            margin-bottom: 8px;
+            font-size: 0.95rem;
+        }
+
+        .form-control, .form-select {
+            border: 2px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 12px 16px;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+            background: rgba(255, 255, 255, 0.8);
+        }
+
+        .form-control:focus, .form-select:focus {
+            border-color: #38a169;
+            box-shadow: 0 0 0 3px rgba(56, 161, 105, 0.1);
+            background: #fff;
+            transform: translateY(-2px);
+        }
+
+        .form-control:hover, .form-select:hover {
+            border-color: #38a169;
+        }
+
+        .input-group-text {
+            background: linear-gradient(135deg, #38a169, #2f855a);
+            border: none;
+            color: white;
+            border-radius: 0 10px 10px 0;
+        }
+
+        .invalid-feedback {
+            font-size: 0.85rem;
+            color: #e53e3e;
+            margin-top: 4px;
         }
 
         .badge-soft {
-            background: rgba(0, 83, 156, .08);
-            color: var(--brand-dark);
-            border: 1px solid rgba(0, 83, 156, .15)
+            background: linear-gradient(135deg, rgba(56, 161, 105, 0.1), rgba(47, 133, 90, 0.1));
+            color: #2f855a;
+            border: 1px solid rgba(56, 161, 105, 0.2);
+            font-weight: 600;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+        }
+
+        .table-container {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.9) 100%);
+            border-radius: 16px;
+            padding: 0;
+            box-shadow: 0 8px 32px rgba(56, 161, 105, 0.15);
+            overflow: hidden;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(56, 161, 105, 0.1);
+        }
+
+        .table-responsive {
+            border-radius: 16px;
+        }
+
+        .table {
+            margin-bottom: 0;
+            background: transparent;
         }
 
         .table thead th {
-            color: var(--brand-dark);
+            background: linear-gradient(135deg, #38a169 0%, #2f855a 100%);
+            color: white;
             font-weight: 700;
-            border-bottom: 2px solid rgba(0, 83, 156, .15)
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border: none;
+            padding: 18px 12px;
+            position: relative;
+            text-align: center;
+        }
+
+        .table thead th:first-child {
+            border-top-left-radius: 16px;
+            text-align: left;
+            padding-left: 20px;
+        }
+
+        .table thead th:last-child {
+            border-top-right-radius: 16px;
+            text-align: center;
+        }
+
+        .table thead th::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.3));
         }
 
         .table tbody td {
-            vertical-align: middle
+            vertical-align: middle;
+            font-size: 0.9rem;
+            padding: 16px 12px;
+            border: none;
+            border-bottom: 1px solid rgba(56, 161, 105, 0.1);
+            text-align: center;
+        }
+
+        .table tbody td:first-child {
+            text-align: left;
+            font-weight: 700;
+            color: #2d3748;
+            padding-left: 20px;
+        }
+
+        .table tbody td:last-child {
+            text-align: center;
+        }
+
+        .table tbody tr {
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            background: rgba(255, 255, 255, 0.5);
+        }
+
+        .table tbody tr:nth-child(even) {
+            background: rgba(56, 161, 105, 0.02);
+        }
+
+        .table tbody tr:nth-child(odd) {
+            background: rgba(255, 255, 255, 0.8);
+        }
+
+        .table tbody tr:hover {
+            background: linear-gradient(135deg, rgba(56, 161, 105, 0.08), rgba(47, 133, 90, 0.08));
+            transform: translateY(-2px) scale(1.01);
+            box-shadow: 0 8px 25px rgba(56, 161, 105, 0.15);
+            border-radius: 12px;
+            margin: 0 4px;
+        }
+
+        .table tbody tr:last-child td {
+            border-bottom: none;
+        }
+
+        /* Status badges in table */
+        .status-badge {
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .status-active {
+            background: linear-gradient(135deg, #10b981, #059669);
+            color: white;
+            box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+        }
+
+        .status-disabled {
+            background: linear-gradient(135deg, #6b7280, #4b5563);
+            color: white;
+            box-shadow: 0 4px 12px rgba(107, 114, 128, 0.3);
+        }
+
+        .status-cancelled {
+            background: linear-gradient(135deg, #ef4444, #dc2626);
+            color: white;
+            box-shadow: 0 4px 12px rgba(239, 68, 68, 0.3);
+        }
+
+        /* Enhanced seat info styling */
+        .seat-info {
+            display: flex;
+            gap: 12px;
+            font-size: 0.85rem;
+            margin-top: 6px;
+            justify-content: center;
+        }
+
+        .seat-count {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            padding: 4px 10px;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.8), rgba(248, 250, 252, 0.8));
+            border-radius: 12px;
+            border: 1px solid rgba(56, 161, 105, 0.15);
+            transition: all 0.3s ease;
+        }
+
+        .seat-count:hover {
+            background: linear-gradient(135deg, rgba(56, 161, 105, 0.1), rgba(47, 133, 90, 0.1));
+            transform: translateY(-1px);
+        }
+
+        /* Enhanced flight number styling */
+        .flight-number {
+            background: linear-gradient(135deg, #38a169, #2f855a);
+            color: white;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-weight: 700;
+            font-size: 0.9rem;
+            box-shadow: 0 4px 12px rgba(56, 161, 105, 0.3);
+        }
+
+        /* Enhanced route styling */
+        .flight-route {
+            background: linear-gradient(135deg, rgba(56, 161, 105, 0.1), rgba(47, 133, 90, 0.1));
+            padding: 6px 12px;
+            border-radius: 16px;
+            font-weight: 600;
+            color: #2d3748;
+            border: 1px solid rgba(56, 161, 105, 0.2);
+        }
+
+        .route-arrow {
+            font-size: 1.2rem;
+            color: #38a169;
+            margin: 0 8px;
+            font-weight: 700;
+        }
+
+        /* Enhanced empty state */
+        .empty-state {
+            text-align: center;
+            padding: 60px 20px;
+            color: #64748b;
+        }
+
+        .empty-state i {
+            width: 64px;
+            height: 64px;
+            margin-bottom: 16px;
+            opacity: 0.6;
+        }
+
+        .empty-state .empty-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #2d3748;
+        }
+
+        .empty-state .empty-subtitle {
+            font-size: 0.95rem;
+            color: #64748b;
+        }
+
+        /* Enhanced search input */
+        .search-container {
+            position: relative;
+        }
+
+        .search-input {
+            border: 2px solid rgba(56, 161, 105, 0.2);
+            border-radius: 25px;
+            padding: 10px 20px 10px 45px;
+            background: rgba(255, 255, 255, 0.9);
+            transition: all 0.3s ease;
+            font-size: 0.9rem;
+        }
+
+        .search-input:focus {
+            border-color: #38a169;
+            box-shadow: 0 0 0 3px rgba(56, 161, 105, 0.1);
+            background: white;
+        }
+
+        .search-icon {
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #64748b;
+            font-size: 1rem;
+        }
+
+        /* Enhanced table wrapper */
+        .table-card {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.9) 100%);
+            border-radius: 20px;
+            padding: 24px;
+            box-shadow: 0 10px 40px rgba(56, 161, 105, 0.15);
+            position: relative;
+            overflow: hidden;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(56, 161, 105, 0.1);
+        }
+
+        .table-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #38a169, #2f855a, #38a169);
+            border-radius: 20px 20px 0 0;
         }
 
         .action-chip {
             border: none;
-            border-radius: 10px;
-            padding: 8px 12px;
+            border-radius: 12px;
+            padding: 8px 16px;
             display: inline-flex;
             align-items: center;
-            gap: 6px;
+            gap: 8px;
             color: #fff;
             font-weight: 600;
-            font-size: 0.8rem
+            font-size: 0.85rem;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            text-decoration: none;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .action-chip::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .action-chip:hover::before {
+            left: 100%;
+        }
+
+        .action-chip:hover {
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
         }
 
         .chip-blue {
-            background: linear-gradient(135deg, #00539C, #003366)
+            background: linear-gradient(135deg, #38a169, #2f855a);
+            box-shadow: 0 6px 20px rgba(56, 161, 105, 0.3);
         }
 
         .chip-green {
-            background: linear-gradient(135deg, #10b981, #059669)
+            background: linear-gradient(135deg, #10b981, #059669);
+            box-shadow: 0 6px 20px rgba(16, 185, 129, 0.3);
         }
 
         .chip-red {
-            background: linear-gradient(135deg, #ef4444, #dc2626)
+            background: linear-gradient(135deg, #ef4444, #dc2626);
+            box-shadow: 0 6px 20px rgba(239, 68, 68, 0.3);
         }
 
         .chip-gray {
-            background: linear-gradient(135deg, #6b7280, #4b5563)
+            background: linear-gradient(135deg, #6b7280, #4b5563);
+            box-shadow: 0 6px 20px rgba(107, 114, 128, 0.3);
         }
 
         .chip-purple {
-            background: linear-gradient(135deg, #7c3aed, #6d28d9)
+            background: linear-gradient(135deg, #7c3aed, #6d28d9);
+            box-shadow: 0 6px 20px rgba(124, 58, 237, 0.3);
         }
 
         .chip-orange {
-            background: linear-gradient(135deg, #f59e0b, #d97706)
+            background: linear-gradient(135deg, #f59e0b, #d97706);
+            box-shadow: 0 6px 20px rgba(245, 158, 11, 0.3);
         }
 
         .loading {
@@ -782,98 +1127,200 @@ $next_flight_no = generateNextFlightNumber($pdo);
             background: linear-gradient(135deg, #10b981, #059669);
             color: #fff;
             font-size: 0.75rem;
-            padding: 2px 8px;
-            border-radius: 12px;
-            margin-left: 8px
+            padding: 4px 10px;
+            border-radius: 15px;
+            margin-left: 8px;
+            font-weight: 600;
+            animation: pulse 2s infinite;
         }
 
-        /* Class-specific styling */
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+
+        /* Enhanced class sections */
         .class-section {
-            border: 2px solid #e5e7eb;
-            border-radius: 12px;
-            padding: 16px;
-            margin-bottom: 16px;
-            transition: all 0.3s ease;
+            border: 2px solid #e2e8f0;
+            border-radius: 16px;
+            padding: 20px;
+            margin-bottom: 20px;
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .class-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #38a169, #2f855a);
         }
 
         .class-section.economy {
-            border-color: var(--economy);
-            background: rgba(16, 185, 129, 0.05);
+            border-color: #10b981;
+            background: linear-gradient(135deg, rgba(16, 185, 129, 0.05), rgba(5, 150, 105, 0.05));
         }
 
         .class-section.business {
-            border-color: var(--business);
-            background: rgba(245, 158, 11, 0.05);
+            border-color: #f59e0b;
+            background: linear-gradient(135deg, rgba(245, 158, 11, 0.05), rgba(217, 119, 6, 0.05));
         }
 
         .class-section.first-class {
-            border-color: var(--first-class);
-            background: rgba(139, 92, 246, 0.05);
+            border-color: #8b5cf6;
+            background: linear-gradient(135deg, rgba(139, 92, 246, 0.05), rgba(109, 40, 217, 0.05));
+        }
+
+        .class-section:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
         }
 
         .class-header {
             display: flex;
             align-items: center;
-            gap: 8px;
-            margin-bottom: 12px;
+            gap: 12px;
+            margin-bottom: 16px;
             font-weight: 700;
             font-size: 1.1rem;
         }
 
         .class-icon {
-            width: 24px;
-            height: 24px;
+            width: 32px;
+            height: 32px;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
             color: white;
-            font-size: 12px;
+            font-size: 14px;
+            font-weight: 800;
         }
 
         .class-icon.economy {
-            background: var(--economy);
+            background: linear-gradient(135deg, #10b981, #059669);
         }
 
         .class-icon.business {
-            background: var(--business);
+            background: linear-gradient(135deg, #f59e0b, #d97706);
         }
 
         .class-icon.first-class {
-            background: var(--first-class);
+            background: linear-gradient(135deg, #8b5cf6, #7c3aed);
         }
 
         .class-badge {
             font-size: 0.75rem;
-            padding: 4px 8px;
-            border-radius: 12px;
+            padding: 4px 10px;
+            border-radius: 15px;
             color: white;
-            margin-left: 4px;
+            margin-left: 8px;
+            font-weight: 600;
         }
 
         .class-badge.economy {
-            background: var(--economy);
+            background: linear-gradient(135deg, #10b981, #059669);
         }
 
         .class-badge.business {
-            background: var(--business);
+            background: linear-gradient(135deg, #f59e0b, #d97706);
         }
 
         .class-badge.first-class {
-            background: var(--first-class);
+            background: linear-gradient(135deg, #8b5cf6, #7c3aed);
         }
 
         .seat-info {
             display: flex;
-            gap: 12px;
-            font-size: 0.85rem;
-            margin-top: 4px;
+            gap: 16px;
+            font-size: 0.9rem;
+            margin-top: 8px;
         }
 
         .seat-count {
             display: flex;
             align-items: center;
-            gap: 4px;
+            gap: 6px;
+            padding: 4px 8px;
+            background: rgba(255, 255, 255, 0.7);
+            border-radius: 8px;
+            border: 1px solid rgba(56, 161, 105, 0.1);
+        }
+
+        /* Enhanced buttons */
+        .btn {
+            border-radius: 12px;
+            font-weight: 600;
+            padding: 10px 20px;
+            transition: all 0.3s ease;
+            border: none;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #38a169, #2f855a);
+            box-shadow: 0 4px 15px rgba(56, 161, 105, 0.3);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(56, 161, 105, 0.4);
+        }
+
+        .btn-outline-primary {
+            border: 2px solid #38a169;
+            color: #38a169;
+            background: transparent;
+        }
+
+        .btn-outline-primary:hover {
+            background: linear-gradient(135deg, #38a169, #2f855a);
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .btn-outline-secondary {
+            border: 2px solid #cbd5e0;
+            color: #4a5568;
+            background: transparent;
+        }
+
+        .btn-outline-secondary:hover {
+            background: #cbd5e0;
+            transform: translateY(-2px);
+        }
+
+        /* Modal enhancements */
+        .modal-content {
+            border-radius: 20px;
+            border: none;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+        }
+
+        .modal-header {
+            background: linear-gradient(135deg, #38a169, #2f855a);
+            color: white;
+            border-radius: 20px 20px 0 0;
+            padding: 20px 24px;
+        }
+
+        .modal-title {
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+
+        .btn-close {
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            opacity: 0.8;
+        }
+
+        .btn-close:hover {
+            opacity: 1;
+            background: rgba(255, 255, 255, 0.3);
         }
 
         @media(max-width:991px) {
@@ -899,7 +1346,7 @@ $next_flight_no = generateNextFlightNumber($pdo);
     <aside class="sidebar" id="sidebar">
         <div class="brand">
             <img src="../pexels-sevenstormphotography-728824 (1).jpg" alt="Logo">
-            <div class="brand-title">SOLA</div>
+            <div class="brand-title">SKYNOVA</div>
         </div>
         <nav class="nav-section">
             <a href="dashboard.php" class="nav-link"><i data-feather="home"></i> Dashboard</a>
@@ -1043,7 +1490,7 @@ $next_flight_no = generateNextFlightNumber($pdo);
                         </div>
                         <div class="row g-3">
                             <div class="col-md-6">
-                                <label class="form-label">Price (USD)</label>
+                                <label class="form-label">Price (NGN)</label>
                                 <input type="number" step="0.01" class="form-control" id="economyPrice" placeholder="e.g., 450.00" required min="0">
                             </div>
                             <div class="col-md-6">
@@ -1062,7 +1509,7 @@ $next_flight_no = generateNextFlightNumber($pdo);
                         </div>
                         <div class="row g-3">
                             <div class="col-md-6">
-                                <label class="form-label">Price (USD)</label>
+                                <label class="form-label">Price (NGN)</label>
                                 <input type="number" step="0.01" class="form-control" id="businessPrice" placeholder="e.g., 1200.00" required min="0">
                             </div>
                             <div class="col-md-6">
@@ -1081,7 +1528,7 @@ $next_flight_no = generateNextFlightNumber($pdo);
                         </div>
                         <div class="row g-3">
                             <div class="col-md-6">
-                                <label class="form-label">Price (USD)</label>
+                                <label class="form-label">Price (NGN)</label>
                                 <input type="number" step="0.01" class="form-control" id="firstClassPrice" placeholder="e.g., 2500.00" required min="0">
                             </div>
                             <div class="col-md-6">
@@ -1109,36 +1556,42 @@ $next_flight_no = generateNextFlightNumber($pdo);
             <div class="d-flex justify-content-between align-items-center mb-3">
                 <div class="fw-bold">All Flights (<?php echo count($flights); ?>)</div>
                 <div class="d-flex gap-2">
-                    <input type="text" id="searchInput" class="form-control form-control-sm" placeholder="Search by Flight No., Airline or Route" style="width: 300px;">
+                    <div class="search-container">
+                        <i data-feather="search" class="search-icon"></i>
+                        <input type="text" id="searchInput" class="search-input" placeholder="Search by Flight No., Airline or Route">
+                    </div>
                 </div>
             </div>
-            <div class="table-responsive">
-                <table class="table align-middle mb-0" id="flightsTable">
-                    <thead>
-                        <tr>
-                            <th>Flight No.</th>
-                            <th>Airline</th>
-                            <th>Route</th>
-                            <th>Date</th>
-                            <th>Time</th>
-                            <th>Aircraft</th>
-                            <th>Class Pricing</th>
-                            <th>Seat Availability</th>
-                            <th>Status</th>
-                            <th>Actions</th>
-                        </tr>
-                    </thead>
-                    <tbody id="flightsBody">
-                        <?php if (empty($flights)): ?>
+            <div class="table-container">
+                <div class="table-responsive">
+                    <table class="table align-middle mb-0" id="flightsTable">
+                        <thead>
                             <tr>
-                                <td colspan="10" class="text-center text-muted py-4">
-                                    <i data-feather="inbox" style="width:48px;height:48px;margin-bottom:12px;"></i><br>
-                                    No flights found. Add your first flight above.
-                                </td>
+                                <th>Flight No.</th>
+                                <th>Airline</th>
+                                <th>Route</th>
+                                <th>Date</th>
+                                <th>Time</th>
+                                <th>Aircraft</th>
+                                <th>Class Pricing</th>
+                                <th>Seat Availability</th>
+                                <th>Status</th>
+                                <th>Actions</th>
                             </tr>
-                        <?php endif; ?>
-                    </tbody>
-                </table>
+                        </thead>
+                        <tbody id="flightsBody">
+                            <?php if (empty($flights)): ?>
+                                <tr>
+                                    <td colspan="10" class="empty-state">
+                                        <i data-feather="inbox"></i>
+                                        <div class="empty-title">No flights found</div>
+                                        <div class="empty-subtitle">Add your first flight above to get started.</div>
+                                    </td>
+                                </tr>
+                            <?php endif; ?>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
     </main>
@@ -1197,7 +1650,7 @@ $next_flight_no = generateNextFlightNumber($pdo);
                             </div>
                             <div class="row g-3">
                                 <div class="col-md-6">
-                                    <label class="form-label">Price (USD)</label>
+                                    <label class="form-label">Price (NGN)</label>
                                     <input type="number" step="0.01" class="form-control" id="editEconomyPrice" required min="0">
                                 </div>
                                 <div class="col-md-6">
@@ -1215,7 +1668,7 @@ $next_flight_no = generateNextFlightNumber($pdo);
                             </div>
                             <div class="row g-3">
                                 <div class="col-md-6">
-                                    <label class="form-label">Price (USD)</label>
+                                    <label class="form-label">Price (NGN)</label>
                                     <input type="number" step="0.01" class="form-control" id="editBusinessPrice" required min="0">
                                 </div>
                                 <div class="col-md-6">
@@ -1233,7 +1686,7 @@ $next_flight_no = generateNextFlightNumber($pdo);
                             </div>
                             <div class="row g-3">
                                 <div class="col-md-6">
-                                    <label class="form-label">Price (USD)</label>
+                                    <label class="form-label">Price (NGN)</label>
                                     <input type="number" step="0.01" class="form-control" id="editFirstClassPrice" required min="0">
                                 </div>
                                 <div class="col-md-6">
@@ -1365,9 +1818,9 @@ $next_flight_no = generateNextFlightNumber($pdo);
         const searchInput = document.getElementById('searchInput');
 
         function statusBadge(st) {
-            if (st === 'scheduled') return '<span class="badge bg-success">Active</span>';
-            if (st === 'disabled') return '<span class="badge bg-secondary">Disabled</span>';
-            return '<span class="badge bg-danger">Cancelled</span>';
+            if (st === 'scheduled') return '<span class="status-badge status-active">Active</span>';
+            if (st === 'disabled') return '<span class="status-badge status-disabled">Disabled</span>';
+            return '<span class="status-badge status-cancelled">Cancelled</span>';
         }
 
         function formatDate(dateStr) {
@@ -1379,15 +1832,15 @@ $next_flight_no = generateNextFlightNumber($pdo);
                 <div class="seat-info">
                     <div class="seat-count">
                         <span class="class-badge economy">E</span>
-                        <span>$${Number(flight.economy_price || 0).toFixed(0)}</span>
+                        <span>₦${Number(flight.economy_price || 0).toFixed(0)}</span>
                     </div>
                     <div class="seat-count">
                         <span class="class-badge business">B</span>
-                        <span>$${Number(flight.business_price || 0).toFixed(0)}</span>
+                        <span>₦${Number(flight.business_price || 0).toFixed(0)}</span>
                     </div>
                     <div class="seat-count">
                         <span class="class-badge first-class">F</span>
-                        <span>$${Number(flight.first_class_price || 0).toFixed(0)}</span>
+                        <span>₦${Number(flight.first_class_price || 0).toFixed(0)}</span>
                     </div>
                 </div>
             `;
@@ -1423,9 +1876,10 @@ $next_flight_no = generateNextFlightNumber($pdo);
             if (filteredFlights.length === 0) {
                 tbody.innerHTML = `
                     <tr>
-                        <td colspan="10" class="text-center text-muted py-4">
-                            <i data-feather="search" style="width:48px;height:48px;margin-bottom:12px;"></i><br>
-                            ${q ? 'No flights match your search.' : 'No flights found. Add your first flight above.'}
+                        <td colspan="10" class="empty-state">
+                            <i data-feather="search"></i>
+                            <div class="empty-title">${q ? 'No flights match your search.' : 'No flights found'}</div>
+                            <div class="empty-subtitle">${q ? 'Try adjusting your search terms.' : 'Add your first flight above to get started.'}</div>
                         </td>
                     </tr>
                 `;
@@ -1436,9 +1890,9 @@ $next_flight_no = generateNextFlightNumber($pdo);
             filteredFlights.forEach(f => {
                 const tr = document.createElement('tr');
                 tr.innerHTML = `
-                    <td><strong>${f.flight_no}</strong></td>
+                    <td><span class="flight-number">${f.flight_no}</span></td>
                     <td>${f.airline}</td>
-                    <td>${f.origin} → ${f.destination}</td>
+                    <td><span class="flight-route">${f.origin} <span class="route-arrow">→</span> ${f.destination}</span></td>
                     <td>${formatDate(f.flight_date)}</td>
                     <td>${f.departure_time} - ${f.arrival_time}</td>
                     <td>${f.aircraft}</td>
@@ -1446,10 +1900,36 @@ $next_flight_no = generateNextFlightNumber($pdo);
                     <td>${formatSeatAvailability(f)}</td>
                     <td>${statusBadge(f.status)}</td>
                     <td>
-                        <button class="action-chip chip-blue btn-sm me-1 mb-1" data-action="edit" data-id="${f.flight_id}"><i data-feather="edit-2"></i> Edit</button>
-                        ${f.status==='cancelled' ? '' : `<button class="action-chip ${f.status==='scheduled'?'chip-gray':'chip-green'} btn-sm me-1 mb-1" data-action="toggle" data-id="${f.flight_id}"><i data-feather="power"></i> ${f.status==='scheduled'?'Disable':'Enable'}</button>`}
-                        ${f.status!=='cancelled' ? `<button class="action-chip chip-red btn-sm me-1 mb-1" data-action="cancel" data-id="${f.flight_id}"><i data-feather="x-circle"></i> Cancel</button>` : ''}
-                        <button class="action-chip chip-orange btn-sm mb-1" data-action="delete" data-id="${f.flight_id}"><i data-feather="trash-2"></i> Delete</button>
+                        <div class="dropdown">
+                            <button class="btn btn-primary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Actions
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li>
+                                    <a class="dropdown-item d-flex align-items-center gap-2" href="#" data-action="edit" data-id="${f.flight_id}">
+                                        <i data-feather="edit-2"></i><span>Edit</span>
+                                    </a>
+                                </li>
+                                ${f.status==='cancelled' ? '' : `
+                                <li>
+                                    <a class="dropdown-item d-flex align-items-center gap-2" href="#" data-action="toggle" data-id="${f.flight_id}">
+                                        <i data-feather="power"></i><span>${f.status==='scheduled'?'Disable':'Enable'}</span>
+                                    </a>
+                                </li>`}
+                                ${f.status!=='cancelled' ? `
+                                <li>
+                                    <a class="dropdown-item d-flex align-items-center gap-2" href="#" data-action="cancel" data-id="${f.flight_id}">
+                                        <i data-feather="x-circle"></i><span>Cancel</span>
+                                    </a>
+                                </li>` : ''}
+                                <li><hr class="dropdown-divider"></li>
+                                <li>
+                                    <a class="dropdown-item d-flex align-items-center gap-2 text-danger" href="#" data-action="delete" data-id="${f.flight_id}">
+                                        <i data-feather="trash-2"></i><span>Delete</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </td>`;
                 tbody.appendChild(tr);
             });
