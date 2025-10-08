@@ -1338,7 +1338,7 @@ $prefill_phone = $user['phone'];
 
                 <!-- Payment Information -->
                 <div class="payment-info">
-                    <img src="https://paystack.com/assets/img/logo/paystack-icon-blue.png" alt="Paystack">
+                    <img src="https://public-files-paystack-prod.s3.eu-west-1.amazonaws.com/integration-logos/paystack.jpg" alt="">
                     <div>
                         <div class="fw-bold mb-2">
                             <i data-feather="credit-card"></i> Secure Payment Processing

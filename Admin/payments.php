@@ -1200,4 +1200,3 @@ function time_elapsed_string($datetime, $full = false)
 </body>
 
 </html>
-</qodoArtifact>

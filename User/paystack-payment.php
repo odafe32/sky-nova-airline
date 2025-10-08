@@ -329,7 +329,7 @@ if ($paystack_response && $paystack_response['status'] === true) {
             </div>
         </div>
 
-        <img src="https://paystack.com/assets/img/logo/paystack-logo-blue.png" alt="Paystack" class="paystack-logo">
+        <img src="https://public-files-paystack-prod.s3.eu-west-1.amazonaws.com/integration-logos/paystack.jpg" alt="Paystack" class="paystack-logo">
 
         <div class="security-info">
             <i data-feather="shield"></i>
