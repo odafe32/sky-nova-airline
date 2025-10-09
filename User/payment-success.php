@@ -408,10 +408,16 @@ $user = $stmt->fetch(PDO::FETCH_ASSOC);
             </div>
 
             <div class="action-buttons">
-                <a href="my-bookings.php" class="btn-custom btn-primary-custom">
+                <form method="post" action="download-ticket.php" style="display: inline;" target="_blank">
+                    <input type="hidden" name="booking_id" value="<?php echo $booking['booking_id']; ?>">
+                    <button type="submit" class="btn-custom btn-primary-custom">
+                        <i data-feather="download"></i> Download PDF Ticket
+                    </button>
+                </form>
+                <a href="my-bookings.php" class="btn-custom btn-secondary-custom">
                     <i data-feather="calendar"></i> View My Bookings
                 </a>
-                <a href="book-flight.php" class="btn-custom btn-secondary-custom">
+                <a href="book-flight.php" class="btn-custom btn-outline-custom">
                     <i data-feather="plus"></i> Book Another Flight
                 </a>
                 <a href="dashboard.php" class="btn-custom btn-outline-custom">

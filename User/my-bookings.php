@@ -749,6 +749,64 @@ $user_avatar = $user['avatar'] ? $user['avatar'] : null;
             text-align: center;
             flex: 1;
         }
+        .action-buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .btn-custom {
+            border: none;
+            border-radius: 12px;
+            font-weight: 600;
+            padding: 12px 30px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            cursor: pointer;
+        }
+
+        .btn-primary-custom {
+            background: linear-gradient(135deg, #38a169 0%, #38a169 100%);
+            color: #fff;
+            box-shadow: 0 4px 15px rgba(0, 83, 156, 0.3);
+        }
+
+        .btn-secondary-custom {
+            background: linear-gradient(135deg, #48bb78 0%, #38a169 100%);
+            color: #fff;
+            box-shadow: 0 4px 15px rgba(72, 187, 120, 0.3);
+        }
+
+        .btn-outline-custom {
+            background: transparent;
+            color: #38a169;
+            border: 2px solid #38a169;
+        }
+
+        .btn-custom:hover {
+            transform: translateY(-2px);
+            color: #fff;
+        }
+
+        .btn-primary-custom:hover {
+            box-shadow: 0 8px 25px rgba(0, 83, 156, 0.4);
+        }
+
+        .btn-secondary-custom:hover {
+            box-shadow: 0 8px 25px rgba(72, 187, 120, 0.4);
+        }
+
+        .btn-outline-custom:hover {
+            background: #38a169;
+            color: #fff;
+        }
+
 
         .route-code {
             font-size: 1.8rem;
@@ -1640,6 +1698,15 @@ $user_avatar = $user['avatar'] ? $user['avatar'] : null;
                                             <span class="detail-value badge bg-success">${data.booking.status}</span>
                                         </div>
                                     </div>
+                                         <div class="action-buttons">
+                <form method="post" action="download-ticket.php" style="display: inline;" target="_blank">
+                    <input type="hidden" name="booking_id" value="<?php echo $booking['booking_id']; ?>">
+                    <button type="submit" class="btn-custom btn-primary-custom" style="pading: 10px 15px; color: white; background-color: green;">
+                        <i data-feather="download"></i> Download PDF Ticket
+                    </button>
+                </form>
+               
+            </div>
                                 </div>
                             </div>
                         `;
